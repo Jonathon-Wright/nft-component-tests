@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jmeterTestPlan>
+  <hashTree>
+    <TestPlan enabled="true" guiclass="TestPlanGui" testclass="TestPlan" testname="BZT Generated Test Plan">
+      <elementProp elementType="Arguments" guiclass="ArgumentsPanel" name="TestPlan.user_defined_variables" testclass="Arguments"/>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="My Scenario">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp elementType="LoopController" guiclass="LoopControlPanel" name="ThreadGroup.main_controller" testclass="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">-1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <stringProp name="ThreadGroup.start_time"></stringProp>
+        <stringProp name="ThreadGroup.end_time"></stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+      </ThreadGroup>
+      <hashTree type="tg">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="Cache">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">true</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookies">
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+        </CookieManager>
+        <hashTree/>
+        <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
+          <collectionProp name="DNSCacheManager.servers"/>
+          <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+          <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+        </DNSCacheManager>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Defaults">
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+          <elementProp elementType="Arguments" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="user_defined"/>
+        </ConfigTestElement>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://auth.integration1.volo2.com/auth/realms/4303/protocol/openid-connect/auth?client_id=web&amp;redirect_uri=https%3A%2F%2Fapp.integration1.volo2.com%2F4303%2F&amp;state=3369da0f-63fa-4e71-920f-585b1ad33959&amp;response_mode=fragment&amp;response_type=code&amp;scope=openid">
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">auth.integration1.volo2.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.path">/auth/realms/4303/protocol/openid-connect/auth?client_id=web&amp;redirect_uri=https%3A%2F%2Fapp.integration1.volo2.com%2F4303%2F&amp;state=3369da0f-63fa-4e71-920f-585b1ad33959&amp;response_mode=fragment&amp;response_type=code&amp;scope=openid</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;.*Log In.*&quot;]">
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <stringProp name="Assertion.test_type">2</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="">.*Log In.*</stringProp>
+            </collectionProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+            <stringProp name="DurationAssertion.duration">0</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree"/>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

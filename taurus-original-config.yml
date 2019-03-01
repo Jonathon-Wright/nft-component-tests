@@ -1,0 +1,10 @@
+scenarios:
+  My Scenario:
+    requests:
+    - url: https://auth.integration1.volo2.com/auth/realms/4303/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fapp.integration1.volo2.com%2F4303%2F&state=3369da0f-63fa-4e71-920f-585b1ad33959&response_mode=fragment&response_type=code&scope=openid
+      method: GET
+      assert:
+      - subject: body
+        contains:
+        - .*Log In.*
+        regexp: true

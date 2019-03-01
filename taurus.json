@@ -1,0 +1,67 @@
+{
+    "execution": [
+        {
+            "concurrency": 10,
+            "ramp-up": "1m",
+            "hold-for": "5m",
+            "scenario": "proxy-recorder"
+        }
+    ],
+    "scenarios": {
+        "proxy-recorder": {
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0",
+                "Accept-Language": "en-GB,en;q=0.5",
+                "Connection": "keep-alive"
+            },
+            "requests": [
+                {
+                    "url": "http://detectportal.firefox.com/success.txt",
+                    "method": "GET",
+                    "headers": {
+                        "Host": "detectportal.firefox.com",
+                        "Accept": "*/*",
+                        "Accept-Encoding": "gzip, deflate",
+                        "Cache-Control": "no-cache",
+                        "Pragma": "no-cache"
+                    }
+                },
+                {
+                    "url": "https://auth.integration1.volo2.com/auth/realms/4303/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fapp.integration1.volo2.com%2F4303%2F&state=367d6a60-6fdc-4add-ada9-0952a1ecdae4&response_mode=fragment&response_type=code&scope=openid&nonce=8c229258-2a68-4b71-9c24-8a80ca05838d&prompt=none",
+                    "method": "GET",
+                    "headers": {
+                        "Host": "auth.integration1.volo2.com",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Referer": "https://app.integration1.volo2.com/4303/",
+                        "Cookie": "AUTH_SESSION_ID=545b5dff-7263-40ac-b1a6-e1f8d308e4de.keycloak-service-8789ff955-z45vd; KC_RESTART=eyJhbGciOiJIUzI1NiIsImtpZCIgOiAiYWViNTdkNzEtMTA4My00ODY2LTgzZDUtNzBmMDgyYWFjM2M1In0.eyJjaWQiOiJ3ZWIiLCJwdHkiOiJvcGVuaWQtY29ubmVjdCIsInJ1cmkiOiJodHRwczovL2FwcC5pbnRlZ3JhdGlvbjEudm9sbzIuY29tLzQzMDMvIiwiYWN0IjoiQVVUSEVOVElDQVRFIiwibm90ZXMiOnsic2NvcGUiOiJvcGVuaWQiLCJpc3MiOiJodHRwczovL2F1dGguaW50ZWdyYXRpb24xLnZvbG8yLmNvbS9hdXRoL3JlYWxtcy80MzAzIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCJjb2RlX2NoYWxsZW5nZV9tZXRob2QiOiJwbGFpbiIsInJlZGlyZWN0X3VyaSI6Imh0dHBzOi8vYXBwLmludGVncmF0aW9uMS52b2xvMi5jb20vNDMwMy8iLCJzdGF0ZSI6ImQ4OWFlMzM2LTEyYzQtNGRmYy04NzRmLTE1YjVkMGQ1MGYwYiIsIm5vbmNlIjoiZTg2MTA4M2UtNjVjOC00YjY0LTg3MjEtYThhMGE2M2FlMzQxIiwicmVzcG9uc2VfbW9kZSI6ImZyYWdtZW50In19.jAesqFjnpM0aNGf9766mecXklhJsqY8jSz0x4Z3btak",
+                        "Upgrade-Insecure-Requests": "1"
+                    }
+                },
+                {
+                    "url": "http://detectportal.firefox.com/success.txt",
+                    "method": "GET",
+                    "headers": {
+                        "Host": "detectportal.firefox.com",
+                        "Accept": "*/*",
+                        "Accept-Encoding": "gzip, deflate",
+                        "Cache-Control": "no-cache",
+                        "Pragma": "no-cache"
+                    }
+                },
+                {
+                    "url": "https://auth.integration1.volo2.com/auth/realms/4303/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fapp.integration1.volo2.com%2F4303%2F&state=632dd0bf-3f8d-4fc6-9810-9b3e9adc6871&response_mode=fragment&response_type=code&scope=openid&nonce=d454a7d2-01a6-4e0b-b767-65000399c933",
+                    "method": "GET",
+                    "headers": {
+                        "Host": "auth.integration1.volo2.com",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Referer": "https://app.integration1.volo2.com/4303/",
+                        "Cookie": "AUTH_SESSION_ID=545b5dff-7263-40ac-b1a6-e1f8d308e4de.keycloak-service-8789ff955-z45vd",
+                        "Upgrade-Insecure-Requests": "1"
+                    }
+                }
+            ]
+        }
+    }
+}
