@@ -1,7 +1,8 @@
-Created the tree successfully using /tmp/artifacts/modified_requests.jmx
-Starting the test @ Mon Feb 04 10:33:58 UTC 2019 (1549276438028)
+Created the tree successfully using /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+Starting the test @ Mon Mar 04 10:06:23 UTC 2019 (1551693983360)
 Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
 Httpd started on port: 9000
 Sessiond started on port: 9001
-Tidying up ...    @ Mon Feb 04 10:34:00 UTC 2019 (1549276440087)
+Command: Shutdown received from /127.0.0.1
+Tidying up ...    @ Mon Mar 04 10:09:34 UTC 2019 (1551694174103)
 ... end of run

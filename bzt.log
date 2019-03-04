@@ -1,187 +1,183 @@
-[2019-02-04 10:33:48,729 INFO root] Taurus CLI Tool v1.13.1
-[2019-02-04 10:33:48,730 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/tmp/bzt_P0Jtyr.log', 'option': None, 'aliases': []}
-[2019-02-04 10:33:48,730 DEBUG root] Python: CPython 2.7.12
-[2019-02-04 10:33:48,730 DEBUG root] OS: ('Linux', 'r-v4-5c58150835b8d-0-0-c', '4.4.115-k8s', '#1 SMP Thu Feb 8 15:37:40 UTC 2018', 'x86_64', 'x86_64')
-[2019-02-04 10:33:48,737 INFO root] Starting with configs: ['./taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
-[2019-02-04 10:33:48,737 DEBUG root] Using personal config: /root/.bzt-rc
-[2019-02-04 10:33:48,737 INFO Engine] Configuring...
-[2019-02-04 10:33:48,737 DEBUG Engine] Reading extension configs from: /etc/bzt.d
-[2019-02-04 10:33:48,738 DEBUG Engine] Base configs list: ['/usr/local/lib/python2.7/dist-packages/bzt/resources/base-config.yml', '/etc/bzt.d/30-custom.yml', '/etc/bzt.d/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
-[2019-02-04 10:33:48,738 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python2.7/dist-packages/bzt/resources/base-config.yml', '/etc/bzt.d/30-custom.yml', '/etc/bzt.d/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
-[2019-02-04 10:33:48,738 DEBUG Engine.Configuration] Reading /usr/local/lib/python2.7/dist-packages/bzt/resources/base-config.yml as YAML
-[2019-02-04 10:33:48,762 DEBUG Engine.Configuration] Reading /etc/bzt.d/30-custom.yml as YAML
-[2019-02-04 10:33:48,764 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-bztcloud.yml as YAML
-[2019-02-04 10:33:48,779 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-jmeter-plugins-all.yml as YAML
-[2019-02-04 10:33:48,781 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
-[2019-02-04 10:33:48,782 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
-[2019-02-04 10:33:48,782 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
-[2019-02-04 10:33:48,783 DEBUG Engine] User configs list: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
-[2019-02-04 10:33:48,783 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
-[2019-02-04 10:33:48,783 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
-[2019-02-04 10:33:48,787 DEBUG Engine.Configuration] Reading ./taurus-custom-config.yml as YAML
-[2019-02-04 10:33:48,809 DEBUG Engine.Configuration] Reading ./taurus-original-config.yml as YAML
-[2019-02-04 10:33:48,811 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
-[2019-02-04 10:33:48,812 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
-[2019-02-04 10:33:48,812 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
-[2019-02-04 10:33:48,816 DEBUG Engine.Configuration] Reading ./taurus-custom-config.yml as YAML
-[2019-02-04 10:33:48,837 DEBUG Engine.Configuration] Reading ./taurus-original-config.yml as YAML
-[2019-02-04 10:33:48,839 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
-[2019-02-04 10:33:48,840 INFO Engine] Artifacts dir: /tmp/artifacts
-[2019-02-04 10:33:48,840 DEBUG Engine] New artifact filename: /tmp/artifacts/effective
-[2019-02-04 10:33:48,843 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
-[2019-02-04 10:33:48,904 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
-[2019-02-04 10:33:48,906 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.yml
-[2019-02-04 10:33:48,908 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/merged.yml
-[2019-02-04 10:33:48,930 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.json
-[2019-02-04 10:33:48,931 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/merged.json
-[2019-02-04 10:33:48,932 DEBUG Engine] Add existing artifact (move=False): ./taurus-custom-config.yml
-[2019-02-04 10:33:48,932 DEBUG Engine] No need to copy ./taurus-custom-config.yml
-[2019-02-04 10:33:48,932 DEBUG Engine] Add existing artifact (move=False): ./taurus-original-config.yml
-[2019-02-04 10:33:48,932 DEBUG Engine] No need to copy ./taurus-original-config.yml
-[2019-02-04 10:33:48,932 DEBUG Engine] Add existing artifact (move=False): /usr/local/bztcloud/final-overrides.yml
-[2019-02-04 10:33:48,932 DEBUG Engine] Copying /usr/local/bztcloud/final-overrides.yml to /tmp/artifacts/final-overrides.yml
-[2019-02-04 10:33:48,932 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
-[2019-02-04 10:33:48,934 DEBUG root] Closing log handler: /tmp/bzt_P0Jtyr.log
-[2019-02-04 10:33:48,934 DEBUG root] Switched writing logs to /tmp/artifacts/bzt.log
-[2019-02-04 10:33:48,934 DEBUG root] Linting config
-[2019-02-04 10:33:48,939 INFO Engine] Preparing...
-[2019-02-04 10:33:48,939 DEBUG Engine] Module config: functional-consolidator {'class': u'bzt.modules.functional.FunctionalAggregator'}
-[2019-02-04 10:33:48,939 DEBUG root] Importing module: bzt.modules.functional
-[2019-02-04 10:33:49,009 DEBUG root] Loading class: 'FunctionalAggregator' from <module 'bzt.modules.functional' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/functional.pyc'>
-[2019-02-04 10:33:49,009 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
-[2019-02-04 10:33:49,009 DEBUG root] Importing module: bzt.modules.monitoring
-[2019-02-04 10:33:49,011 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/monitoring.pyc'>
-[2019-02-04 10:33:49,011 DEBUG Engine] Module config: forced-headers {'class': u'bztcloud.helpers.forcedheaders.ForcedHeaders'}
-[2019-02-04 10:33:49,011 DEBUG root] Importing module: bztcloud.helpers.forcedheaders
-[2019-02-04 10:33:49,086 DEBUG root] Loading class: 'ForcedHeaders' from <module 'bztcloud.helpers.forcedheaders' from '/usr/local/lib/python2.7/dist-packages/bztcloud/helpers/forcedheaders.pyc'>
-[2019-02-04 10:33:49,086 DEBUG Engine] Module config: virtual-display {'class': u'bzt.modules.services.VirtualDisplay'}
-[2019-02-04 10:33:49,087 DEBUG root] Importing module: bzt.modules.services
-[2019-02-04 10:33:49,088 DEBUG easyprocess] version=0.2.3
-[2019-02-04 10:33:49,089 DEBUG pyvirtualdisplay] version=0.2.1
-[2019-02-04 10:33:49,121 DEBUG pyscreenshot] version=0.4.2
-[2019-02-04 10:33:49,122 DEBUG root] Loading class: 'VirtualDisplay' from <module 'bzt.modules.services' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/services.pyc'>
-[2019-02-04 10:33:49,122 DEBUG Engine] Module config: cloud-utils {'shutdown-script': u'/usr/local/bztcloud/cloud-shutdown.sh', 'commands-channel': {'url': u'https://a.blazemeter.com/api/v4/taurus/{session_id}/poll', 'timeout': u'60s'}, 'session': {'test_id': 6587102, 'user_id': 337960, 'session_token': '********', 'master_id': 18943543, 'session_id': u'r-v4-5c58150835b8d', 'signature': u'ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg='}, 'delayed-start': False, 'start-limit-exceeded-shutdown': False, 'sleep-after': 0, 'class': u'bztcloud.CloudUtilsService', 'destination-bucket': {'url': None, 'aws_key_id': None, 'aws_key_secret': None}, 'start-allow-sleep-interval': u'1s', 'status-notify-timeout': u'60s', 'jetlag-download': u'', 'jetlag-url': u'', 'start-allow-limit': u'1ms', 'jetlag-args': u'-max_labels 100', 'status-notify-url': u'https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify', 'aws-params': {'data-path': u'users/337960/tests/6587102/reports/r-v4-5c58150835b8d/data', 'url': u's3://blazemeter/users/337960/tests/6587102/reports/r-v4-5c58150835b8d/', 'report-path': u'users/337960/tests/6587102/reports/r-v4-5c58150835b8d', 'region': u'us-east-1', 'data-path-array': None, 'bucket-name': u'blazemeter', 'secret': '********', 'token': '********', 'key-id': u'ASIA27ZZ6HCKVJO4GPCP'}, 'hosts': [u'127.0.0.1 google.com', u'127.0.0.1 blazemeter.com'], 'session-token': '********'}
-[2019-02-04 10:33:49,122 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,122 DEBUG root] Loading class: 'CloudUtilsService' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,123 DEBUG Engine] Module config: periodic-uploader {'upload_interval': 60, 'enabled': True, 'class': u'bztcloud.PeriodicFileUploader', 'file_names_for_prepare': [u'/tmp/artifacts/bzt.log']}
-[2019-02-04 10:33:49,123 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,123 DEBUG root] Loading class: 'PeriodicFileUploader' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,123 DEBUG Engine] Module config: initial-uploader {'upload_interval': 0, 'file_names_for_startup': [u'/tmp/artifacts/*.jmx'], 'enabled': True, 'class': u'bztcloud.InitialFileUploader', 'file_names_for_prepare': [u'/tmp/artifacts/effective.yml', u'/tmp/artifacts/effective.json', u'/tmp/artifacts/merged.yml', u'/tmp/artifacts/merged.json', u'/tmp/artifacts/admin/cloud-launcher.log']}
-[2019-02-04 10:33:49,123 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,123 DEBUG root] Loading class: 'InitialFileUploader' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,124 DEBUG Engine] Module config: version-switch {'switch-java': None, 'class': u'bztcloud.VersionSwitcherService'}
-[2019-02-04 10:33:49,124 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,124 DEBUG root] Loading class: 'VersionSwitcherService' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,124 DEBUG Engine] Module config: timelimit {'class': u'bztcloud.helpers.timelimiter.TimeLimiter'}
-[2019-02-04 10:33:49,124 DEBUG root] Importing module: bztcloud.helpers.timelimiter
-[2019-02-04 10:33:49,124 DEBUG root] Loading class: 'TimeLimiter' from <module 'bztcloud.helpers.timelimiter' from '/usr/local/lib/python2.7/dist-packages/bztcloud/helpers/timelimiter.pyc'>
-[2019-02-04 10:33:49,124 DEBUG Engine] Module config: shellexec {'class': u'bzt.modules.shellexec.ShellExecutor'}
-[2019-02-04 10:33:49,125 DEBUG root] Importing module: bzt.modules.shellexec
-[2019-02-04 10:33:49,125 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/shellexec.pyc'>
-[2019-02-04 10:33:49,125 DEBUG Engine] Module config: s3downloader {'class': u'bztcloud.S3Downloader'}
-[2019-02-04 10:33:49,125 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,125 DEBUG root] Loading class: 'S3Downloader' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,125 DEBUG Engine] Module config: func-execution-overrider {'execution-override': {'concurrency': 1, 'iterations': 1}, 'class': u'bztcloud.func_exec_overrider.FunctionalExecutionService'}
-[2019-02-04 10:33:49,125 DEBUG root] Importing module: bztcloud.func_exec_overrider
-[2019-02-04 10:33:49,125 DEBUG root] Loading class: 'FunctionalExecutionService' from <module 'bztcloud.func_exec_overrider' from '/usr/local/lib/python2.7/dist-packages/bztcloud/func_exec_overrider.pyc'>
-[2019-02-04 10:33:49,126 WARNING Engine] Module 'timelimit' can be only used once, will merge all new instances into single
-[2019-02-04 10:33:49,126 DEBUG Engine] Module config: final-notifier {'class': u'bztcloud.FinalNotifier'}
-[2019-02-04 10:33:49,126 DEBUG root] Importing module: bztcloud
-[2019-02-04 10:33:49,126 DEBUG root] Loading class: 'FinalNotifier' from <module 'bztcloud' from '/usr/local/lib/python2.7/dist-packages/bztcloud/__init__.pyc'>
-[2019-02-04 10:33:49,126 DEBUG Engine] Module config: dynjmx {'class': u'bztcloud.helpers.dynjmx.JMXOverrider'}
-[2019-02-04 10:33:49,126 DEBUG root] Importing module: bztcloud.helpers.dynjmx
-[2019-02-04 10:33:49,127 DEBUG root] Loading class: 'JMXOverrider' from <module 'bztcloud.helpers.dynjmx' from '/usr/local/lib/python2.7/dist-packages/bztcloud/helpers/dynjmx.pyc'>
-[2019-02-04 10:33:49,127 DEBUG Engine.cloud-utils] Cloud modules version: 0.3.6
-[2019-02-04 10:33:49,127 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:05:50,635 INFO root] Taurus CLI Tool v1.13.2
+[2019-03-04 10:05:50,636 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/tmp/bzt_EAqCfR.log', 'option': None, 'aliases': []}
+[2019-03-04 10:05:50,636 DEBUG root] Python: CPython 2.7.12
+[2019-03-04 10:05:50,636 DEBUG root] OS: ('Linux', 'f2d1f1a3c3cb', '4.4.0-1075-aws', '#85-Ubuntu SMP Thu Jan 17 17:15:12 UTC 2019', 'x86_64', 'x86_64')
+[2019-03-04 10:05:50,637 INFO root] Starting with configs: ['./taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2019-03-04 10:05:50,638 DEBUG root] Using personal config: /root/.bzt-rc
+[2019-03-04 10:05:50,639 INFO Engine] Configuring...
+[2019-03-04 10:05:50,639 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2019-03-04 10:05:50,694 DEBUG Engine] Base configs list: [u'/usr/local/lib/python2.7/dist-packages/bzt/resources/10-base-config.yml', u'/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcustom/30-custom.yml', u'/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2019-03-04 10:05:50,694 DEBUG Engine.Configuration] Configs: [u'/usr/local/lib/python2.7/dist-packages/bzt/resources/10-base-config.yml', u'/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcustom/30-custom.yml', u'/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/50-bztcloud.yml', '/etc/bzt.d/50-jmeter-plugins-all.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2019-03-04 10:05:50,695 DEBUG Engine.Configuration] Reading /usr/local/lib/python2.7/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2019-03-04 10:05:50,741 DEBUG Engine.Configuration] Reading /usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcustom/30-custom.yml as YAML
+[2019-03-04 10:05:50,744 DEBUG Engine.Configuration] Reading /usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/50-bztcloud.yml as YAML
+[2019-03-04 10:05:50,801 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-jmeter-plugins-all.yml as YAML
+[2019-03-04 10:05:50,805 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2019-03-04 10:05:50,807 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2019-03-04 10:05:50,808 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2019-03-04 10:05:50,808 DEBUG Engine] User configs list: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2019-03-04 10:05:50,808 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2019-03-04 10:05:50,841 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2019-03-04 10:05:50,847 DEBUG Engine.Configuration] Reading ./taurus-custom-config.yml as YAML
+[2019-03-04 10:05:50,883 DEBUG Engine.Configuration] Reading ./taurus-original-config.yml as YAML
+[2019-03-04 10:05:50,884 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
+[2019-03-04 10:05:50,885 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', './taurus-custom-config.yml', './taurus-original-config.yml', '/usr/local/bztcloud/final-overrides.yml']
+[2019-03-04 10:05:50,886 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2019-03-04 10:05:50,893 DEBUG Engine.Configuration] Reading ./taurus-custom-config.yml as YAML
+[2019-03-04 10:05:50,929 DEBUG Engine.Configuration] Reading ./taurus-original-config.yml as YAML
+[2019-03-04 10:05:50,929 DEBUG Engine.Configuration] Reading /usr/local/bztcloud/final-overrides.yml as YAML
+[2019-03-04 10:05:50,931 INFO Engine] Artifacts dir: /tmp/artifacts
+[2019-03-04 10:05:50,932 DEBUG Engine] New artifact filename: /tmp/artifacts/effective
+[2019-03-04 10:05:50,938 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2019-03-04 10:05:51,022 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2019-03-04 10:05:51,025 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.yml
+[2019-03-04 10:05:51,026 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/merged.yml
+[2019-03-04 10:05:51,052 DEBUG Engine] New artifact filename: /tmp/artifacts/merged.json
+[2019-03-04 10:05:51,054 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/merged.json
+[2019-03-04 10:05:51,055 DEBUG Engine] Add existing artifact (move=False): ./taurus-custom-config.yml
+[2019-03-04 10:05:51,055 DEBUG Engine] No need to copy ./taurus-custom-config.yml
+[2019-03-04 10:05:51,055 DEBUG Engine] Add existing artifact (move=False): ./taurus-original-config.yml
+[2019-03-04 10:05:51,055 DEBUG Engine] No need to copy ./taurus-original-config.yml
+[2019-03-04 10:05:51,055 DEBUG Engine] Add existing artifact (move=False): /usr/local/bztcloud/final-overrides.yml
+[2019-03-04 10:05:51,055 DEBUG Engine] Copying /usr/local/bztcloud/final-overrides.yml to /tmp/artifacts/final-overrides.yml
+[2019-03-04 10:05:51,056 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2019-03-04 10:05:51,058 DEBUG root] Closing log handler: /tmp/bzt_EAqCfR.log
+[2019-03-04 10:05:51,058 DEBUG root] Switched writing logs to /tmp/artifacts/bzt.log
+[2019-03-04 10:05:51,059 DEBUG root] Linting config
+[2019-03-04 10:05:51,070 INFO Engine] Preparing...
+[2019-03-04 10:05:51,072 DEBUG Engine] Module config: consolidator {'max-error-variety': 100, 'class': u'bzt.modules.aggregator.ConsolidatingAggregator', 'generalize-labels': 500}
+[2019-03-04 10:05:51,072 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-03-04 10:05:52,590 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/aggregator.pyc'>
+[2019-03-04 10:05:52,591 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-03-04 10:05:52,591 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
+[2019-03-04 10:05:52,591 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-03-04 10:05:52,594 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/monitoring.pyc'>
+[2019-03-04 10:05:52,594 DEBUG Engine] Module config: forced-headers {'class': u'bztcloud.helpers.forcedheaders.ForcedHeaders'}
+[2019-03-04 10:05:52,595 DEBUG root] Importing module: bztcloud.helpers.forcedheaders
+[2019-03-04 10:05:53,080 DEBUG root] Loading class: 'ForcedHeaders' from <module 'bztcloud.helpers.forcedheaders' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/helpers/forcedheaders.pyc'>
+[2019-03-04 10:05:53,080 DEBUG Engine] Module config: virtual-display {'class': u'bzt.modules.services.VirtualDisplay'}
+[2019-03-04 10:05:53,080 DEBUG root] Importing module: bzt.modules.services
+[2019-03-04 10:05:53,138 DEBUG easyprocess] version=0.2.3
+[2019-03-04 10:05:53,141 DEBUG pyvirtualdisplay] version=0.2.1
+[2019-03-04 10:05:53,396 DEBUG pyscreenshot] version=0.5.1
+[2019-03-04 10:05:53,397 DEBUG root] Loading class: 'VirtualDisplay' from <module 'bzt.modules.services' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/services.py'>
+[2019-03-04 10:05:53,398 DEBUG Engine] Module config: cloud-utils {'shutdown-script': u'/usr/local/bztcloud/cloud-shutdown.sh', 'commands-channel': {'url': u'https://a.blazemeter.com/api/v4/taurus/{session_id}/poll', 'timeout': u'60s'}, 'session': {'test_id': 6655278, 'user_id': 337960, 'session_token': '********', 'master_id': 19081464, 'session_id': u'r-v4-5c7cf844582cb', 'signature': u'ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ='}, 'delayed-start': False, 'start-limit-exceeded-shutdown': False, 'sleep-after': 0, 'class': u'bztcloud.CloudUtilsService', 'destination-bucket': {'url': None, 'aws_key_id': None, 'aws_key_secret': None}, 'start-allow-sleep-interval': u'1s', 'status-notify-timeout': u'60s', 'jetpack-config': {'acceleratedStart': True, 'maxLabelsBufferSeconds': 2, 'compress': True, 'maxLabels': 100, 'downloadUrl': u'', 'maxDataBufferSeconds': 10, 'submitUrl': u'https://data.blazemeter.com/submit.php', 'metadata': {'scenarioId': u'0f76bea976e567e69000ad263e98f43258ff4d40e8e5a134eab581be0c63db19', 'userId': 337960, 'sessionCount': 1, 'sessionToken': '********', 'masterId': u'19081464', 'sessionId': u'r-v4-5c7cf844582cb', 'locationId': u'us-east-1', 'testId': 6655278}}, 'jetlag-download': u'', 'jetlag-url': u'https://data.blazemeter.com/submit.php?signature={signature}&session_id={session_id}&user_id={user_id}&test_id={test_id}', 'start-allow-limit': u'1ms', 'jetlag-args': u'-max_labels 100', 'status-notify-url': u'https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify', 'aws-params': {'data-path': None, 'url': u's3://blazemeter/masters/19081464/sessions/r-v4-5c7cf844582cb/', 'report-path': u'masters/19081464/sessions/r-v4-5c7cf844582cb', 'region': u'us-east-1', 'data-path-array': [u'masters/19081464/tests/6655278', u'masters/19081464/folders'], 'bucket-name': u'blazemeter', 'secret': '********', 'token': '********', 'key-id': u'ASIA27ZZ6HCKWXUJF7CZ'}, 'hosts': [u'127.0.0.1 google.com', u'127.0.0.1 blazemeter.com'], 'session-token': '********'}
+[2019-03-04 10:05:53,398 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,399 DEBUG root] Loading class: 'CloudUtilsService' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,399 DEBUG Engine] Module config: periodic-uploader {'upload_interval': 60, 'enabled': True, 'class': u'bztcloud.PeriodicFileUploader', 'file_names_for_prepare': [u'/tmp/artifacts/bzt.log', u'/tmp/artifacts/jmeter.log']}
+[2019-03-04 10:05:53,400 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,400 DEBUG root] Loading class: 'PeriodicFileUploader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,400 DEBUG Engine] Module config: initial-uploader {'upload_interval': 0, 'file_names_for_startup': [u'/tmp/artifacts/*.jmx'], 'enabled': True, 'class': u'bztcloud.InitialFileUploader', 'file_names_for_prepare': [u'/tmp/artifacts/effective.yml', u'/tmp/artifacts/effective.json', u'/tmp/artifacts/merged.yml', u'/tmp/artifacts/merged.json', u'/tmp/artifacts/admin/cloud-launcher.log']}
+[2019-03-04 10:05:53,400 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,400 DEBUG root] Loading class: 'InitialFileUploader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,401 DEBUG Engine] Module config: version-switch {'switch-java': None, 'class': u'bztcloud.VersionSwitcherService'}
+[2019-03-04 10:05:53,401 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,401 DEBUG root] Loading class: 'VersionSwitcherService' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,401 DEBUG Engine] Module config: timelimit {'class': u'bztcloud.helpers.timelimiter.TimeLimiter'}
+[2019-03-04 10:05:53,401 DEBUG root] Importing module: bztcloud.helpers.timelimiter
+[2019-03-04 10:05:53,402 DEBUG root] Loading class: 'TimeLimiter' from <module 'bztcloud.helpers.timelimiter' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/helpers/timelimiter.pyc'>
+[2019-03-04 10:05:53,402 DEBUG Engine] Module config: shellexec {'class': u'bzt.modules.shellexec.ShellExecutor'}
+[2019-03-04 10:05:53,402 DEBUG root] Importing module: bzt.modules.shellexec
+[2019-03-04 10:05:53,403 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/shellexec.pyc'>
+[2019-03-04 10:05:53,403 DEBUG Engine] Module config: s3downloader {'class': u'bztcloud.S3Downloader'}
+[2019-03-04 10:05:53,403 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,403 DEBUG root] Loading class: 'S3Downloader' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,403 WARNING Engine] Module 'timelimit' can be only used once, will merge all new instances into single
+[2019-03-04 10:05:53,404 DEBUG Engine] Module config: final-notifier {'class': u'bztcloud.FinalNotifier'}
+[2019-03-04 10:05:53,404 DEBUG root] Importing module: bztcloud
+[2019-03-04 10:05:53,404 DEBUG root] Loading class: 'FinalNotifier' from <module 'bztcloud' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.pyc'>
+[2019-03-04 10:05:53,405 DEBUG Engine] Module config: dynjmx {'class': u'bztcloud.helpers.dynjmx.JMXOverrider'}
+[2019-03-04 10:05:53,406 DEBUG root] Importing module: bztcloud.helpers.dynjmx
+[2019-03-04 10:05:53,406 DEBUG root] Loading class: 'JMXOverrider' from <module 'bztcloud.helpers.dynjmx' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/helpers/dynjmx.pyc'>
+[2019-03-04 10:05:53,407 DEBUG Engine.cloud-utils] Cloud modules version: 0.3.8
+[2019-03-04 10:05:53,408 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "preparing", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:33:49,131 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:33:49,214 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 96
-[2019-02-04 10:33:49,215 DEBUG Engine.cloud-utils] Response [200]: {
+[2019-03-04 10:05:53,411 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:05:53,485 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 96
+[2019-03-04 10:05:53,486 DEBUG Engine.cloud-utils] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "preparing"
     }
 }
-[2019-02-04 10:33:49,215 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/poll
-[2019-02-04 10:33:49,216 DEBUG Engine.cloud-utils] Skipping Jetpack setup since key does not exist
-[2019-02-04 10:33:49,216 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/poll {
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+[2019-03-04 10:05:53,487 DEBUG Engine.cloud-utils] Successfully setup jetpack parameters
+[2019-03-04 10:05:53,487 DEBUG Engine.periodic-uploader] files to upload:
+[2019-03-04 10:05:53,487 DEBUG Engine.periodic-uploader] /tmp/artifacts/bzt.log /tmp/artifacts/jmeter.log
+[2019-03-04 10:05:53,489 DEBUG Engine.periodic-uploader] Starting Periodic File Uploader
+[2019-03-04 10:05:53,489 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fc9ccd8b650>
+[2019-03-04 10:05:53,490 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/poll
+[2019-03-04 10:05:53,490 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/poll {
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:33:49,217 DEBUG Engine.periodic-uploader] files to upload:
-[2019-02-04 10:33:49,217 DEBUG Engine.periodic-uploader] /tmp/artifacts/bzt.log
-[2019-02-04 10:33:49,224 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:33:49,226 DEBUG Engine.periodic-uploader] Starting Periodic File Uploader
-[2019-02-04 10:33:49,226 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fcd4c42c2d0>
-[2019-02-04 10:33:49,226 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '60', '--aws_params', '/tmp/tmpRVTNT8.yml', u'/tmp/artifacts/bzt.log'] at .
-[2019-02-04 10:33:49,301 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/poll HTTP/1.1" 200 15
-[2019-02-04 10:33:49,303 DEBUG Engine.cloud-utils] Response [200]: {"cmd":"start"}
-[2019-02-04 10:33:49,304 DEBUG Engine.cloud-utils] Got command from server: {u'cmd': u'start'}
-[2019-02-04 10:33:49,304 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/poll
-[2019-02-04 10:33:49,304 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/poll {
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+[2019-03-04 10:05:53,490 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '60', '--aws_params', '/tmp/tmpnTGrIG.yml', u'/tmp/artifacts/bzt.log', u'/tmp/artifacts/jmeter.log'] at .
+[2019-03-04 10:05:53,496 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:05:53,545 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/poll HTTP/1.1" 200 15
+[2019-03-04 10:05:53,547 DEBUG Engine.cloud-utils] Response [200]: {"cmd":"start"}
+[2019-03-04 10:05:53,547 DEBUG Engine.cloud-utils] Got command from server: {u'cmd': u'start'}
+[2019-03-04 10:05:53,548 DEBUG Engine.cloud-utils] Long polling, request commands from (sleep 1): https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/poll
+[2019-03-04 10:05:53,548 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/poll {
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:33:49,503 DEBUG Engine.periodic-uploader] Periodic File Uploader started
-[2019-02-04 10:33:49,503 DEBUG Engine.initial-uploader] files to upload:
-[2019-02-04 10:33:49,504 DEBUG Engine.initial-uploader] /tmp/artifacts/effective.yml /tmp/artifacts/effective.json /tmp/artifacts/merged.yml /tmp/artifacts/merged.json /tmp/artifacts/admin/cloud-launcher.log
-[2019-02-04 10:33:49,507 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
-[2019-02-04 10:33:49,507 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fcd4c42c2d0>
-[2019-02-04 10:33:49,508 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmpz0IDH6.yml', u'/tmp/artifacts/effective.yml', u'/tmp/artifacts/effective.json', u'/tmp/artifacts/merged.yml', u'/tmp/artifacts/merged.json', u'/tmp/artifacts/admin/cloud-launcher.log'] at .
-[2019-02-04 10:33:49,804 DEBUG Engine.initial-uploader] Periodic File Uploader started
-[2019-02-04 10:33:49,804 DEBUG Engine.version-switch] Setting JMeter version to 5.0
-[2019-02-04 10:33:49,804 DEBUG Engine.version-switch] Setting Gatling version to 2.3.0
-[2019-02-04 10:33:49,856 DEBUG Engine.shellexec] Added prepare task: {'command': u'atop -a -w atop.binlog 15', 'cwd': u'/tmp/artifacts/admin', 'background': True, 'ignore-failure': True}
-[2019-02-04 10:33:49,856 WARNING Engine] Could not find location at path: artifacts-dir
-[2019-02-04 10:33:49,877 DEBUG Engine.shellexec] Added prepare task: {'background': False, 'command': u'/usr/local/bztcloud/jetlag-download.sh', 'cwd': u'artifacts-dir', 'err': u'jetlag-download.log', 'out': u'jetlag-download.log'}
-[2019-02-04 10:33:49,878 WARNING Engine] Could not find location at path: artifacts-dir
-[2019-02-04 10:33:49,897 DEBUG Engine.shellexec] Added prepare task: {'background': True, 'command': u'/usr/local/bztcloud/jetlag-run.sh', 'cwd': u'artifacts-dir', 'err': u'jetlag.log', 'out': u'jetlag.log'}
-[2019-02-04 10:33:49,897 WARNING Engine] Could not find location at path: artifacts-dir
-[2019-02-04 10:33:49,910 DEBUG Engine.shellexec] Added prepare task: {'cwd': u'artifacts-dir', 'command': u'/usr/local/bztcloud/jetpack-download.sh', 'err': u'jetpack-download.log', 'background': False, 'ignore-failure': True, 'out': u'jetpack-download.log'}
-[2019-02-04 10:33:49,911 WARNING Engine] Could not find location at path: artifacts-dir
-[2019-02-04 10:33:49,929 DEBUG Engine.shellexec] Added prepare task: {'cwd': u'artifacts-dir', 'command': u'/usr/local/bztcloud/jetpack-run.sh', 'err': u'jetpack.log', 'background': True, 'ignore-failure': True, 'out': u'jetpack.log'}
-[2019-02-04 10:33:49,947 DEBUG Engine.shellexec] Added post-process task: {'background': False, 'command': u'/usr/local/bztcloud/process-cleanup.sh', 'cwd': u'/tmp/artifacts/admin', 'err': u'process-cleanup.log', 'out': u'process-cleanup.log'}
-[2019-02-04 10:33:49,953 INFO Engine.shellexec.Task] Starting shell command: atop -a -w atop.binlog 15
-[2019-02-04 10:33:50,251 DEBUG Engine.shellexec.Task] Task started, PID: 124
-[2019-02-04 10:33:50,257 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetlag-download.sh
-[2019-02-04 10:33:50,543 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/jetlag-download.sh
-[2019-02-04 10:33:50,549 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetlag-run.sh
-[2019-02-04 10:33:50,830 DEBUG Engine.shellexec.Task] Task started, PID: 149
-[2019-02-04 10:33:50,837 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetpack-download.sh
-[2019-02-04 10:33:51,185 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/jetpack-download.sh
-[2019-02-04 10:33:51,191 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetpack-run.sh
-[2019-02-04 10:33:51,470 DEBUG Engine.shellexec.Task] Task started, PID: 156
-[2019-02-04 10:33:51,560 INFO botocore.vendored.requests.packages.urllib3.connectionpool] Starting new HTTPS connection (1): s3.amazonaws.com
-[2019-02-04 10:33:51,611 DEBUG Engine.s3downloader] objects for download: [s3.ObjectSummary(bucket_name=u'blazemeter', key=u'users/337960/tests/6587102/reports/r-v4-5c58150835b8d/data/blazemeter_functional_script.yaml')]
-[2019-02-04 10:33:51,611 DEBUG Engine.s3downloader] Downloading from S3: users/337960/tests/6587102/reports/r-v4-5c58150835b8d/data/blazemeter_functional_script.yaml => /tmp/artifacts/blazemeter_functional_script.yaml
-[2019-02-04 10:33:51,648 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
-[2019-02-04 10:33:51,648 DEBUG root] Importing module: bzt.modules.provisioning
-[2019-02-04 10:33:51,648 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/provisioning.pyc'>
-[2019-02-04 10:33:51,649 DEBUG Engine] Module config: jmeter {'path': '/root/.bzt/jmeter-taurus/5.0', 'properties': {'blazemeter.is_functional': 1, 'jpgc.repo.sendstats': u'false', 'jmeter.save.saveservice.output_format': u'xml', 'jmeter.save.saveservice.time': u'true', 'jmeter.save.saveservice.assertions': u'true', 'jmeter.save.saveservice.thread_name': u'true', 'jmeter.save.saveservice.data_type': u'true', 'jmeter.save.saveservice.response_data': u'true', 'jmeter.save.saveservice.thread_counts': u'true', 'summariser.name': u'', 'jmeter.save.saveservice.latency': u'true', 'jmeter.save.saveservice.sample_count': u'true', 'jmeter.save.saveservice.encoding': u'true', 'jmeter.save.saveservice.sent_bytes': u'true', 'jmeter.save.saveservice.idle_time': u'true', 'jmeter.save.saveservice.responseHeaders': u'true', 'jmeter.save.saveservice.requestHeaders': u'true', 'jmeter.save.saveservice.hostname': u'true', 'jmeter.save.saveservice.subresults': u'true', 'jmeter.save.saveservice.samplerData': u'true', 'jmeter.save.saveservice.url': u'true', 'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.assertion_results_failure_message': u'true', 'jmeter.save.saveservice.successful': u'true', 'jmeter.save.saveservice.response_code': u'true', 'jmeter.save.saveservice.response_message': u'true', 'jmeter.save.saveservice.assertion_results': u'all', 'jmeter.save.saveservice.response_data.on_error': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.label': u'true', 'jmeter.save.saveservice.bytes': u'true'}, 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst', u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst', u'jpgc-webdriver', u'jpgc-wsc'], 'class': u'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': u'bzt.jmx.http.HTTPProtocolHandler'}}
-[2019-02-04 10:33:51,649 DEBUG root] Importing module: bzt.modules.jmeter
-[2019-02-04 10:33:51,649 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/jmeter.pyc'>
-[2019-02-04 10:33:51,649 DEBUG Engine.local] Preparing executor: None/140519619912656
-[2019-02-04 10:33:51,660 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.log
-[2019-02-04 10:33:51,660 DEBUG Engine.jmeter] Checking if port 4445 is free
-[2019-02-04 10:33:51,661 DEBUG Engine.jmeter] Port 4445 is free
-[2019-02-04 10:33:51,661 DEBUG Engine.jmeter] Using port 4445 for management
-[2019-02-04 10:33:51,661 DEBUG Engine] New artifact filename: /tmp/artifacts/requests.jmx
-[2019-02-04 10:33:51,662 DEBUG root] Importing module: bzt.jmx.http
-[2019-02-04 10:33:51,662 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/lib/python2.7/dist-packages/bzt/jmx/http.pyc'>
-[2019-02-04 10:33:51,663 DEBUG JMeterScenarioBuilder] Saving JMX to: /tmp/artifacts/requests.jmx
-[2019-02-04 10:33:51,663 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
-[2019-02-04 10:33:51,664 DEBUG Engine] New artifact filename: /tmp/artifacts/system.properties
-[2019-02-04 10:33:51,664 DEBUG Engine.jmeter] Additional properties: {'blazemeter.is_functional': 1, 'jpgc.repo.sendstats': u'false', 'jmeter.save.saveservice.output_format': u'xml', 'jmeter.save.saveservice.time': u'true', 'jmeter.save.saveservice.assertions': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeter.save.saveservice.thread_name': u'true', 'jmeter.save.saveservice.data_type': u'true', 'jmeter.save.saveservice.response_data': u'true', 'jmeter.save.saveservice.thread_counts': u'true', 'summariser.name': u'', 'jmeter.save.saveservice.latency': u'true', 'jmeter.save.saveservice.sample_count': u'true', 'jmeter.save.saveservice.encoding': u'true', 'user.classpath': '/tmp/artifacts:/tmp/artifacts', 'jmeter.save.saveservice.sent_bytes': u'true', 'sampleresult.default.encoding': 'UTF-8', 'jmeter.save.saveservice.idle_time': u'true', 'jmeter.save.saveservice.responseHeaders': u'true', 'jmeter.save.saveservice.requestHeaders': u'true', 'jmeter.save.saveservice.hostname': u'true', 'jmeter.save.saveservice.subresults': u'true', 'jmeter.save.saveservice.samplerData': u'true', 'jmeter.save.saveservice.url': u'true', 'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.assertion_results_failure_message': u'true', 'jmeter.save.saveservice.successful': u'true', 'jmeter.save.saveservice.response_code': u'true', 'jmeter.save.saveservice.response_message': u'true', 'jmeter.save.saveservice.assertion_results': u'all', 'jmeter.save.saveservice.response_data.on_error': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'jmeterengine.nongui.port': 4445, 'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.label': u'true', 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.bytes': u'true'}
-[2019-02-04 10:33:51,664 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter-bzt.properties
-[2019-02-04 10:33:51,684 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
-[2019-02-04 10:33:51,742 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "1.8.0_181"
-OpenJDK Runtime Environment (build 1.8.0_181-8u181-b13-0ubuntu0.16.04.1-b13)
-OpenJDK 64-Bit Server VM (build 25.181-b13, mixed mode)
-[2019-02-04 10:33:51,742 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
-[2019-02-04 10:33:51,753 DEBUG Engine.jmeter.JMeter] Trying jmeter: /root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh
-[2019-02-04 10:33:51,754 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-j', '/tmp/jmeterK7Ct93log', '--version'] at .
-[2019-02-04 10:33:53,104 DEBUG Engine.jmeter.JMeter] JMeter check: OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
+[2019-03-04 10:05:53,837 DEBUG Engine.periodic-uploader] Periodic File Uploader started
+[2019-03-04 10:05:53,837 DEBUG Engine.initial-uploader] files to upload:
+[2019-03-04 10:05:53,837 DEBUG Engine.initial-uploader] /tmp/artifacts/effective.yml /tmp/artifacts/effective.json /tmp/artifacts/merged.yml /tmp/artifacts/merged.json /tmp/artifacts/admin/cloud-launcher.log
+[2019-03-04 10:05:53,842 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
+[2019-03-04 10:05:53,842 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fc9ccd8b650>
+[2019-03-04 10:05:53,842 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmpHyL4Gf.yml', u'/tmp/artifacts/effective.yml', u'/tmp/artifacts/effective.json', u'/tmp/artifacts/merged.yml', u'/tmp/artifacts/merged.json', u'/tmp/artifacts/admin/cloud-launcher.log'] at .
+[2019-03-04 10:05:54,569 DEBUG Engine.initial-uploader] Periodic File Uploader started
+[2019-03-04 10:05:54,571 WARNING Engine.version-switch] Path not exists: /root/.bzt/jmeter-taurus/auto
+[2019-03-04 10:05:54,572 DEBUG Engine.version-switch] Setting Gatling version to 2.3.0
+[2019-03-04 10:05:54,573 DEBUG Engine.shellexec] Added prepare task: {'command': u'atop -a -w atop.binlog 15', 'cwd': u'/tmp/artifacts/admin', 'background': True, 'ignore-failure': True}
+[2019-03-04 10:05:54,574 WARNING Engine] Could not find location at path: artifacts-dir
+[2019-03-04 10:05:54,574 DEBUG Engine.shellexec] Added prepare task: {'background': False, 'command': u'/usr/local/bztcloud/jetlag-download.sh', 'cwd': u'artifacts-dir', 'err': u'jetlag-download.log', 'out': u'jetlag-download.log'}
+[2019-03-04 10:05:54,575 WARNING Engine] Could not find location at path: artifacts-dir
+[2019-03-04 10:05:54,575 DEBUG Engine.shellexec] Added prepare task: {'background': True, 'command': u'/usr/local/bztcloud/jetlag-run.sh', 'cwd': u'artifacts-dir', 'err': u'jetlag.log', 'out': u'jetlag.log'}
+[2019-03-04 10:05:54,576 WARNING Engine] Could not find location at path: artifacts-dir
+[2019-03-04 10:05:54,576 DEBUG Engine.shellexec] Added prepare task: {'cwd': u'artifacts-dir', 'command': u'/usr/local/bztcloud/jetpack-download.sh', 'err': u'jetpack-download.log', 'background': False, 'ignore-failure': True, 'out': u'jetpack-download.log'}
+[2019-03-04 10:05:54,577 WARNING Engine] Could not find location at path: artifacts-dir
+[2019-03-04 10:05:54,577 DEBUG Engine.shellexec] Added prepare task: {'cwd': u'artifacts-dir', 'command': u'/usr/local/bztcloud/jetpack-run.sh', 'err': u'jetpack.log', 'background': True, 'ignore-failure': True, 'out': u'jetpack.log'}
+[2019-03-04 10:05:54,578 DEBUG Engine.shellexec] Added post-process task: {'background': False, 'command': u'/usr/local/bztcloud/process-cleanup.sh', 'cwd': u'/tmp/artifacts/admin', 'err': u'process-cleanup.log', 'out': u'process-cleanup.log'}
+[2019-03-04 10:05:54,578 INFO Engine.shellexec.Task] Starting shell command: atop -a -w atop.binlog 15
+[2019-03-04 10:05:55,605 DEBUG Engine.shellexec.Task] Task started, PID: 152
+[2019-03-04 10:05:55,606 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetlag-download.sh
+[2019-03-04 10:05:56,523 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/jetlag-download.sh
+[2019-03-04 10:05:56,523 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetlag-run.sh
+[2019-03-04 10:05:56,939 DEBUG Engine.shellexec.Task] Task started, PID: 178
+[2019-03-04 10:05:56,939 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetpack-download.sh
+[2019-03-04 10:05:57,303 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/jetpack-download.sh
+[2019-03-04 10:05:57,304 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/jetpack-run.sh
+[2019-03-04 10:05:57,654 DEBUG Engine.shellexec.Task] Task started, PID: 193
+[2019-03-04 10:05:57,826 INFO botocore.vendored.requests.packages.urllib3.connectionpool] Starting new HTTPS connection (1): s3.amazonaws.com
+[2019-03-04 10:05:57,883 DEBUG Engine.s3downloader] objects for download: [s3.ObjectSummary(bucket_name=u'blazemeter', key=u'masters/19081464/tests/6655278/Demo_PE_VOLO.jmx')]
+[2019-03-04 10:05:57,884 DEBUG Engine.s3downloader] Downloading from S3: masters/19081464/tests/6655278/Demo_PE_VOLO.jmx => /tmp/artifacts/Demo_PE_VOLO.jmx
+[2019-03-04 10:05:58,019 DEBUG Engine.s3downloader] objects for download: []
+[2019-03-04 10:05:58,022 DEBUG Engine.shellexec] Added prepare task: {'command': u'find . -name \'*.zip\' -exec sh -c \'unzip -o "$0"\' \'{}\' \';\''}
+[2019-03-04 10:05:58,022 INFO Engine.shellexec.Task] Starting shell command: find . -name '*.zip' -exec sh -c 'unzip -o "$0"' '{}' ';'
+[2019-03-04 10:05:58,385 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: find . -name '*.zip' -exec sh -c 'unzip -o "$0"' '{}' ';'
+[2019-03-04 10:05:58,386 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
+[2019-03-04 10:05:58,386 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-03-04 10:05:58,387 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/provisioning.pyc'>
+[2019-03-04 10:05:58,387 DEBUG Engine] Module config: jmeter {'properties': {'jpgc.repo.sendstats': u'false', 'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true'}, 'version': u'auto', 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst', u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst', u'jpgc-webdriver', u'jpgc-wsc'], 'class': u'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': u'bzt.jmx.http.HTTPProtocolHandler'}}
+[2019-03-04 10:05:58,387 DEBUG root] Importing module: bzt.modules.jmeter
+[2019-03-04 10:05:58,388 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/jmeter.pyc'>
+[2019-03-04 10:05:58,388 DEBUG Engine.local] Preparing executor: jmeter/140504489800912
+[2019-03-04 10:05:58,389 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.log
+[2019-03-04 10:05:58,389 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2019-03-04 10:05:58,390 DEBUG Engine.jmeter] Port 4445 is free
+[2019-03-04 10:05:58,390 DEBUG Engine.jmeter] Using port 4445 for management
+[2019-03-04 10:05:58,395 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'jpgc.repo.sendstats': u'false', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true', 'user.classpath': u'/tmp/artifacts:/tmp/artifacts', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445}
+[2019-03-04 10:05:58,396 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter-bzt.properties
+[2019-03-04 10:05:58,397 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2019-03-04 10:06:00,086 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "1.8.0_191"
+OpenJDK Runtime Environment (build 1.8.0_191-8u191-b12-2ubuntu0.16.04.1-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+[2019-03-04 10:06:00,086 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2019-03-04 10:06:00,142 DEBUG Engine.jmeter.JMeter] Trying jmeter: /root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh
+[2019-03-04 10:06:00,143 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-j', '/tmp/jmeterfEFao_log', '--version'] at .
+[2019-03-04 10:06:10,414 DEBUG Engine.jmeter.JMeter] JMeter check: OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
 OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
    / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
@@ -192,77 +188,74 @@ OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was r
 Copyright (c) 1999-2018 The Apache Software Foundation
 
  / None
-[2019-02-04 10:33:53,105 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=1, throughput=None, ramp_up=None, hold=0, iterations=1, duration=None, steps=None)
-[2019-02-04 10:33:53,107 DEBUG Engine] New artifact filename: /tmp/artifacts/trace.jtl
-[2019-02-04 10:33:53,108 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: duration not found, regular ThreadGroup will be used
-[2019-02-04 10:33:53,109 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (My Scenario) to ThreadGroup and apply load parameters
-[2019-02-04 10:33:53,109 DEBUG Engine] New artifact filename: /tmp/artifacts/modified_requests.jmx
-[2019-02-04 10:33:53,110 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_requests.jmx
-[2019-02-04 10:33:53,115 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/tmp/artifacts/modified_requests.jmx'] at .
-[2019-02-04 10:33:55,657 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /tmp/artifacts/modified_requests.jmx
-2019-02-04 10:33:54,222 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
-2019-02-04 10:33:54,272 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-b5aacf0facb7db49277bed8779ccb2e1-nongui
-2019-02-04 10:33:55,180 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.6, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-webdriver=3.0, jpgc-tst=2.5, jpgc-wsc=0.7, jmeter-core=5.0, jmeter-ftp=5.0, jmeter-http=5.0, jmeter-jdbc=5.0, jmeter-jms=5.0, jmeter-junit=5.0, jmeter-java=5.0, jmeter-ldap=5.0, jmeter-mail=5.0, jmeter-mongodb=5.0, jmeter-native=5.0, jmeter-tcp=5.0, jmeter-components=5.0]
-2019-02-04 10:33:55,183 INFO o.j.r.PluginManagerCMD: Params line is: /tmp/artifacts/modified_requests.jmx
-2019-02-04 10:33:55,466 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2019-02-04 10:33:55,475 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2019-02-04 10:33:55,479 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2019-02-04 10:33:55,512 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
-2019-02-04 10:33:55,515 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2019-02-04 10:33:55,518 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [option]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add_host]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete_host]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_system_dns_resolver]
-2019-02-04 10:33:55,519 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_custom_dns_resolver]
-2019-02-04 10:33:55,520 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
-2019-02-04 10:33:55,520 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_host]
-2019-02-04 10:33:55,520 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2019-02-04 10:33:55,557 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2019-02-04 10:33:55,618 INFO o.j.r.PluginManager: Finishing without changes
+[2019-03-04 10:06:10,415 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=20, throughput=None, ramp_up=60.0, hold=1140.0, iterations=0, duration=1200.0, steps=0)
+[2019-03-04 10:06:10,418 DEBUG Engine] New artifact filename: /tmp/artifacts/kpi.jtl
+[2019-03-04 10:06:10,419 DEBUG Engine] New artifact filename: /tmp/artifacts/error.jtl
+[2019-03-04 10:06:10,425 INFO Engine.jmeter] 1 obsolete CookieManagers are found and fixed
+[2019-03-04 10:06:10,439 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (Thread Group) to ConcurrencyThreadGroup and apply load parameters
+[2019-03-04 10:06:10,440 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+[2019-03-04 10:06:10,443 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', u'/tmp/artifacts/modified_Demo_PE_VOLO.jmx'] at .
+[2019-03-04 10:06:17,401 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+2019-03-04 10:06:13,044 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2019-03-04 10:06:13,186 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-5f96c154a491d992e299c4a71b722527-nongui
+2019-03-04 10:06:15,493 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.6, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.0, jmeter-ftp=5.0, jmeter-http=5.0, jmeter-jdbc=5.0, jmeter-jms=5.0, jmeter-junit=5.0, jmeter-java=5.0, jmeter-ldap=5.0, jmeter-mail=5.0, jmeter-mongodb=5.0, jmeter-native=5.0, jmeter-tcp=5.0, jmeter-components=5.0]
+2019-03-04 10:06:15,496 INFO o.j.r.PluginManagerCMD: Params line is: /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+2019-03-04 10:06:16,612 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-03-04 10:06:16,641 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-03-04 10:06:16,655 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-03-04 10:06:17,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [option]
+2019-03-04 10:06:17,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add]
+2019-03-04 10:06:17,008 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [add_host]
+2019-03-04 10:06:17,009 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete]
+2019-03-04 10:06:17,009 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [delete_host]
+2019-03-04 10:06:17,009 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_system_dns_resolver]
+2019-03-04 10:06:17,009 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [use_custom_dns_resolver]
+2019-03-04 10:06:17,009 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
+2019-03-04 10:06:17,010 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_host]
+2019-03-04 10:06:17,010 WARN o.a.j.u.JMeterUtils: ERROR! Resource string not found: [dns_hostname_or_ip]
+2019-03-04 10:06:17,027 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2019-03-04 10:06:17,042 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2019-03-04 10:06:17,094 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-04 10:06:17,095 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-04 10:06:17,095 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-04 10:06:17,095 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-03-04 10:06:17,096 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-03-04 10:06:17,105 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-03-04 10:06:17,170 INFO o.j.r.PluginManager: Finishing without changes
 
 OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
 OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
 
-[2019-02-04 10:33:55,658 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.out
-[2019-02-04 10:33:55,658 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.err
-[2019-02-04 10:33:55,658 DEBUG Engine] Module config: final-stats {'class': u'bzt.modules.reporting.FinalStatus'}
-[2019-02-04 10:33:55,658 DEBUG root] Importing module: bzt.modules.reporting
-[2019-02-04 10:33:55,663 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/reporting.pyc'>
-[2019-02-04 10:33:55,663 DEBUG Engine] Module config: console {'disable': True, 'class': u'bzt.modules.console.ConsoleStatusReporter'}
-[2019-02-04 10:33:55,663 DEBUG root] Importing module: bzt.modules.console
-[2019-02-04 10:33:55,663 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/console.pyc'>
-[2019-02-04 10:33:55,664 DEBUG Engine] Module config: ldjson-results {'class': u'bztcustom.ldjsonresults.LDJSONExporter'}
-[2019-02-04 10:33:55,664 DEBUG root] Importing module: bztcustom.ldjsonresults
-[2019-02-04 10:33:55,664 DEBUG root] Loading class: 'LDJSONExporter' from <module 'bztcustom.ldjsonresults' from '/usr/local/lib/python2.7/dist-packages/bztcustom/ldjsonresults.pyc'>
-[2019-02-04 10:33:55,665 DEBUG Engine] Module config: blazemeter {'data-address': u'https://data.blazemeter.com', 'browser-open': u'none', 'address': u'https://a.blazemeter.com', 'class': u'bzt.modules.blazemeter.BlazeMeterUploader'}
-[2019-02-04 10:33:55,665 DEBUG root] Importing module: bzt.modules.blazemeter
-[2019-02-04 10:33:55,665 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/blazemeter.pyc'>
-[2019-02-04 10:33:55,665 DEBUG Engine] Module config: func-sender {'class': u'bztcloud.reporters.functional.FunctionalReporter'}
-[2019-02-04 10:33:55,666 DEBUG root] Importing module: bztcloud.reporters.functional
-[2019-02-04 10:33:55,666 DEBUG root] Loading class: 'FunctionalReporter' from <module 'bztcloud.reporters.functional' from '/usr/local/lib/python2.7/dist-packages/bztcloud/reporters/functional.pyc'>
-[2019-02-04 10:33:55,667 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
-[2019-02-04 10:33:55,667 DEBUG Engine.blazemeter] Installing http client
-[2019-02-04 10:33:55,681 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
-[2019-02-04 10:33:55,728 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
-[2019-02-04 10:33:55,729 INFO Engine] Starting...
-[2019-02-04 10:33:55,730 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7fcd4c933f50>
-[2019-02-04 10:33:55,730 DEBUG Engine] Startup <bztcloud.helpers.forcedheaders.ForcedHeaders object at 0x7fcd33c2add0>
-[2019-02-04 10:33:55,730 DEBUG Engine] Startup <bzt.modules.services.VirtualDisplay object at 0x7fcd32967f90>
-[2019-02-04 10:33:55,730 DEBUG easyprocess] param: "['Xvfb', '-help']" 
-[2019-02-04 10:33:55,730 DEBUG easyprocess] command: ['Xvfb', '-help']
-[2019-02-04 10:33:55,730 DEBUG easyprocess] joined command: Xvfb -help
-[2019-02-04 10:33:55,734 DEBUG easyprocess] process was started (pid=291)
-[2019-02-04 10:33:55,737 DEBUG easyprocess] process has ended
-[2019-02-04 10:33:55,737 DEBUG easyprocess] return code=0
-[2019-02-04 10:33:55,737 DEBUG easyprocess] stdout=
-[2019-02-04 10:33:55,737 DEBUG easyprocess] stderr=use: X [:<display>] [option]
+[2019-03-04 10:06:17,402 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.out
+[2019-03-04 10:06:17,402 DEBUG Engine] New artifact filename: /tmp/artifacts/jmeter.err
+[2019-03-04 10:06:17,403 DEBUG Engine] Module config: final-stats {'class': u'bzt.modules.reporting.FinalStatus'}
+[2019-03-04 10:06:17,403 DEBUG root] Importing module: bzt.modules.reporting
+[2019-03-04 10:06:17,441 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/reporting.pyc'>
+[2019-03-04 10:06:17,442 DEBUG Engine] Module config: console {'disable': True, 'class': u'bzt.modules.console.ConsoleStatusReporter'}
+[2019-03-04 10:06:17,442 DEBUG root] Importing module: bzt.modules.console
+[2019-03-04 10:06:17,442 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/console.pyc'>
+[2019-03-04 10:06:17,443 DEBUG Engine] Module config: ldjson-results {'class': u'bztcustom.ldjsonresults.LDJSONExporter'}
+[2019-03-04 10:06:17,443 DEBUG root] Importing module: bztcustom.ldjsonresults
+[2019-03-04 10:06:17,445 DEBUG root] Loading class: 'LDJSONExporter' from <module 'bztcustom.ldjsonresults' from '/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcustom/ldjsonresults.pyc'>
+[2019-03-04 10:06:17,445 DEBUG Engine] Module config: blazemeter {'data-address': u'https://data.blazemeter.com', 'browser-open': u'none', 'address': u'https://a.blazemeter.com', 'class': u'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-03-04 10:06:17,446 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-03-04 10:06:17,446 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python2.7/dist-packages/bzt/modules/blazemeter.pyc'>
+[2019-03-04 10:06:17,447 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2019-03-04 10:06:17,448 DEBUG Engine.blazemeter] Installing http client
+[2019-03-04 10:06:17,457 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2019-03-04 10:06:17,546 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2019-03-04 10:06:17,549 INFO Engine] Starting...
+[2019-03-04 10:06:17,549 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7fc9ccdb1b10>
+[2019-03-04 10:06:17,550 DEBUG Engine] Startup <bztcloud.helpers.forcedheaders.ForcedHeaders object at 0x7fc9c30c2850>
+[2019-03-04 10:06:17,551 DEBUG Engine] Startup <bzt.modules.services.VirtualDisplay object at 0x7fc9c1dfbf90>
+[2019-03-04 10:06:17,551 DEBUG easyprocess] param: "['Xvfb', '-help']" 
+[2019-03-04 10:06:17,552 DEBUG easyprocess] command: ['Xvfb', '-help']
+[2019-03-04 10:06:17,552 DEBUG easyprocess] joined command: Xvfb -help
+[2019-03-04 10:06:17,596 DEBUG easyprocess] process was started (pid=401)
+[2019-03-04 10:06:18,264 DEBUG easyprocess] process has ended
+[2019-03-04 10:06:18,265 DEBUG easyprocess] return code=0
+[2019-03-04 10:06:18,265 DEBUG easyprocess] stdout=
+[2019-03-04 10:06:18,265 DEBUG easyprocess] stderr=use: X [:<display>] [option]
 -a #                   default pointer acceleration (factor)
 -ac                    disable access control restrictions
 -audit int             set audit trail level
@@ -345,14 +338,14 @@ v                      video blanking for screen-saver
 -whitepixel n          pixel value for white
 -fbdir directory       put framebuffers in mmap'ed files in directory
 -shmem                 put framebuffers in shared memory
-[2019-02-04 10:33:55,738 DEBUG easyprocess] param: "['xauth', '-h']" 
-[2019-02-04 10:33:55,738 DEBUG easyprocess] command: ['xauth', '-h']
-[2019-02-04 10:33:55,738 DEBUG easyprocess] joined command: xauth -h
-[2019-02-04 10:33:55,741 DEBUG easyprocess] process was started (pid=292)
-[2019-02-04 10:33:55,742 DEBUG easyprocess] process has ended
-[2019-02-04 10:33:55,742 DEBUG easyprocess] return code=1
-[2019-02-04 10:33:55,742 DEBUG easyprocess] stdout=
-[2019-02-04 10:33:55,742 DEBUG easyprocess] stderr=usage:  xauth [-options ...] [command arg ...]
+[2019-03-04 10:06:18,266 DEBUG easyprocess] param: "['xauth', '-h']" 
+[2019-03-04 10:06:18,266 DEBUG easyprocess] command: ['xauth', '-h']
+[2019-03-04 10:06:18,266 DEBUG easyprocess] joined command: xauth -h
+[2019-03-04 10:06:18,304 DEBUG easyprocess] process was started (pid=402)
+[2019-03-04 10:06:18,306 DEBUG easyprocess] process has ended
+[2019-03-04 10:06:18,306 DEBUG easyprocess] return code=1
+[2019-03-04 10:06:18,306 DEBUG easyprocess] stdout=
+[2019-03-04 10:06:18,307 DEBUG easyprocess] stderr=usage:  xauth [-options ...] [command arg ...]
 
 where options include:
     -f authfilename                name of authority file to use
@@ -391,17 +384,17 @@ and commands have the following syntax:
 A dash may be used with the "merge" and "source" to read from the
 standard input.  Commands beginning with "n" use numeric format.
 
-[2019-02-04 10:33:55,742 DEBUG easyprocess] param: "['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1000']" 
-[2019-02-04 10:33:55,742 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1000']
-[2019-02-04 10:33:55,742 DEBUG easyprocess] joined command: Xvfb -br -nolisten tcp -screen 0 1024x768x24 :1000
-[2019-02-04 10:33:55,742 DEBUG easyprocess] param: "['xauth', '-h']" 
-[2019-02-04 10:33:55,742 DEBUG easyprocess] command: ['xauth', '-h']
-[2019-02-04 10:33:55,742 DEBUG easyprocess] joined command: xauth -h
-[2019-02-04 10:33:55,746 DEBUG easyprocess] process was started (pid=293)
-[2019-02-04 10:33:55,746 DEBUG easyprocess] process has ended
-[2019-02-04 10:33:55,746 DEBUG easyprocess] return code=1
-[2019-02-04 10:33:55,746 DEBUG easyprocess] stdout=
-[2019-02-04 10:33:55,747 DEBUG easyprocess] stderr=usage:  xauth [-options ...] [command arg ...]
+[2019-03-04 10:06:18,307 DEBUG easyprocess] param: "['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1000']" 
+[2019-03-04 10:06:18,307 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1000']
+[2019-03-04 10:06:18,307 DEBUG easyprocess] joined command: Xvfb -br -nolisten tcp -screen 0 1024x768x24 :1000
+[2019-03-04 10:06:18,307 DEBUG easyprocess] param: "['xauth', '-h']" 
+[2019-03-04 10:06:18,308 DEBUG easyprocess] command: ['xauth', '-h']
+[2019-03-04 10:06:18,308 DEBUG easyprocess] joined command: xauth -h
+[2019-03-04 10:06:18,313 DEBUG easyprocess] process was started (pid=403)
+[2019-03-04 10:06:18,314 DEBUG easyprocess] process has ended
+[2019-03-04 10:06:18,314 DEBUG easyprocess] return code=1
+[2019-03-04 10:06:18,314 DEBUG easyprocess] stdout=
+[2019-03-04 10:06:18,315 DEBUG easyprocess] stderr=usage:  xauth [-options ...] [command arg ...]
 
 where options include:
     -f authfilename                name of authority file to use
@@ -440,119 +433,333 @@ and commands have the following syntax:
 A dash may be used with the "merge" and "source" to read from the
 standard input.  Commands beginning with "n" use numeric format.
 
-[2019-02-04 10:33:55,747 DEBUG easyprocess] param: "['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']" 
-[2019-02-04 10:33:55,747 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']
-[2019-02-04 10:33:55,747 DEBUG easyprocess] joined command: Xvfb -br -nolisten tcp -screen 0 1024x768x24 :1001
-[2019-02-04 10:33:55,747 INFO Engine.virtual-display] Starting virtual display[(1024, 768)]: :1001
-[2019-02-04 10:33:55,750 DEBUG easyprocess] process was started (pid=294)
-[2019-02-04 10:33:55,751 DEBUG pyvirtualdisplay.abstractdisplay] DISPLAY=:1001
-[2019-02-04 10:33:55,851 DEBUG Engine] Startup <bztcloud.CloudUtilsService object at 0x7fcd3296d350>
-[2019-02-04 10:33:55,854 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:06:18,315 DEBUG easyprocess] param: "['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']" 
+[2019-03-04 10:06:18,315 DEBUG easyprocess] command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']
+[2019-03-04 10:06:18,315 DEBUG easyprocess] joined command: Xvfb -br -nolisten tcp -screen 0 1024x768x24 :1001
+[2019-03-04 10:06:18,315 INFO Engine.virtual-display] Starting virtual display[(1024, 768)]: :1001
+[2019-03-04 10:06:18,318 DEBUG easyprocess] param: "['xauth', 'add', ':1001', '.', '5d05320dae6fc607707793a58d28f853']" 
+[2019-03-04 10:06:18,319 DEBUG easyprocess] command: ['xauth', 'add', ':1001', '.', '5d05320dae6fc607707793a58d28f853']
+[2019-03-04 10:06:18,319 DEBUG easyprocess] joined command: xauth add :1001 . 5d05320dae6fc607707793a58d28f853
+[2019-03-04 10:06:18,326 DEBUG easyprocess] process was started (pid=404)
+[2019-03-04 10:06:18,327 DEBUG easyprocess] process has ended
+[2019-03-04 10:06:18,328 DEBUG easyprocess] return code=0
+[2019-03-04 10:06:18,328 DEBUG easyprocess] stdout=
+[2019-03-04 10:06:18,328 DEBUG easyprocess] stderr=
+[2019-03-04 10:06:18,332 DEBUG easyprocess] process was started (pid=405)
+[2019-03-04 10:06:18,332 DEBUG pyvirtualdisplay.abstractdisplay] DISPLAY=:1001
+[2019-03-04 10:06:18,433 DEBUG Engine] Startup <bztcloud.CloudUtilsService object at 0x7fc9c1dd13d0>
+[2019-03-04 10:06:18,436 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "starting", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:33:55,858 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:33:55,939 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 95
-[2019-02-04 10:33:55,940 DEBUG Engine.cloud-utils] Response [200]: {
+[2019-03-04 10:06:18,438 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:06:18,501 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 95
+[2019-03-04 10:06:18,504 DEBUG Engine.cloud-utils] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "starting"
     }
 }
-[2019-02-04 10:33:55,941 INFO Engine.cloud-utils] Setting bsh port for None/My Scenario to 9000
-[2019-02-04 10:33:55,942 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:06:18,505 INFO Engine.cloud-utils] Setting bsh port for jmeter/default-scenario-6655278 to 9000
+[2019-03-04 10:06:18,509 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "ready", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:33:55,946 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:33:56,037 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 92
-[2019-02-04 10:33:56,038 DEBUG Engine.cloud-utils] Response [200]: {
+[2019-03-04 10:06:18,511 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:06:18,581 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 92
+[2019-03-04 10:06:18,583 DEBUG Engine.cloud-utils] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "ready"
     }
 }
-[2019-02-04 10:33:56,039 INFO Engine.cloud-utils] Got start command
-[2019-02-04 10:33:56,039 INFO Engine.cloud-utils] Allowed to proceed with start
-[2019-02-04 10:33:56,039 DEBUG Engine] Startup <bztcloud.PeriodicFileUploader object at 0x7fcd46a0f750>
-[2019-02-04 10:33:56,039 DEBUG Engine] Startup <bztcloud.InitialFileUploader object at 0x7fcd46a0f790>
-[2019-02-04 10:33:56,039 DEBUG Engine.initial-uploader] files to upload:
-[2019-02-04 10:33:56,039 DEBUG Engine.initial-uploader] /tmp/artifacts/*.jmx
-[2019-02-04 10:33:56,041 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
-[2019-02-04 10:33:56,042 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fcd4c42c2d0>
-[2019-02-04 10:33:56,042 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmp3kb9eT.yml', u'/tmp/artifacts/*.jmx'] at .
-[2019-02-04 10:33:56,320 DEBUG Engine.initial-uploader] Periodic File Uploader started
-[2019-02-04 10:33:56,321 DEBUG Engine] Startup <bztcloud.VersionSwitcherService object at 0x7fcd46a0f8d0>
-[2019-02-04 10:33:56,321 DEBUG Engine] Startup <bztcloud.helpers.timelimiter.TimeLimiter object at 0x7fcd46a0fa50>
-[2019-02-04 10:33:56,321 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7fcd46a0fa90>
-[2019-02-04 10:33:56,322 DEBUG Engine] Startup <bztcloud.S3Downloader object at 0x7fcd46a0fb90>
-[2019-02-04 10:33:56,322 DEBUG Engine] Startup <bztcloud.func_exec_overrider.FunctionalExecutionService object at 0x7fcd46a0fc10>
-[2019-02-04 10:33:56,322 DEBUG Engine] Startup <bztcloud.FinalNotifier object at 0x7fcd46a0fd10>
-[2019-02-04 10:33:56,322 DEBUG Engine] Startup <bztcloud.helpers.dynjmx.JMXOverrider object at 0x7fcd46a0fc90>
-[2019-02-04 10:33:56,323 WARNING Engine.dynjmx] Concurrency parameterization in ThreadGroup (My Scenario): skipped
-[2019-02-04 10:33:56,324 WARNING Engine.dynjmx] Ramp-up parameterization in ThreadGroup (My Scenario): skipped
-[2019-02-04 10:33:56,325 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_requests.jmx
-[2019-02-04 10:33:56,325 DEBUG Engine] Startup <bzt.modules.functional.FunctionalAggregator object at 0x7fcd49ade850>
-[2019-02-04 10:33:56,325 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7fcd46076890>
-[2019-02-04 10:33:56,325 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7fcd45c168d0>
-[2019-02-04 10:33:56,326 INFO Engine.console] Waiting for results...
-[2019-02-04 10:33:56,326 DEBUG Engine] Startup <bztcustom.ldjsonresults.LDJSONExporter object at 0x7fcd45b6b950>
-[2019-02-04 10:33:56,326 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x7fcd45b77390>
-[2019-02-04 10:33:56,326 DEBUG Engine] Startup <bztcloud.reporters.functional.FunctionalReporter object at 0x7fcd45cc54d0>
-[2019-02-04 10:33:56,326 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7fcd49b61b50>
-[2019-02-04 10:33:56,326 DEBUG Engine.local] Delay setup for None/My Scenario: 0(start-at) + 0(delay) = 0
-[2019-02-04 10:33:56,330 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
-[2019-02-04 10:33:56,377 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
-[2019-02-04 10:33:56,379 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
-[2019-02-04 10:33:56,379 DEBUG root] Leveled up log file verbosity
-[2019-02-04 10:33:56,393 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-n', '-t', '/tmp/artifacts/modified_requests.jmx', '-j', '/tmp/artifacts/jmeter.log', '-q', '/tmp/artifacts/jmeter-bzt.properties', '-S', '/tmp/artifacts/system.properties'] at /tmp/artifacts
-[2019-02-04 10:33:56,686 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
-[2019-02-04 10:34:00,396 INFO botocore.vendored.requests.packages.urllib3.connectionpool] Starting new HTTPS connection (1): s3.amazonaws.com
-[2019-02-04 10:34:01,437 WARNING Engine] Please wait for graceful shutdown...
-[2019-02-04 10:34:01,437 DEBUG root] Leveled up log file verbosity
-[2019-02-04 10:34:01,437 INFO Engine] Shutting down...
-[2019-02-04 10:34:01,437 DEBUG Engine] Current stop reason: None
-[2019-02-04 10:34:01,438 DEBUG Engine.local] Shutdown None/My Scenario
-[2019-02-04 10:34:01,438 DEBUG pyvirtualdisplay.abstractdisplay] unset DISPLAY
-[2019-02-04 10:34:01,438 DEBUG easyprocess] stopping process (pid=294 cmd="['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']")
-[2019-02-04 10:34:01,438 DEBUG easyprocess] process is active -> sending SIGTERM
-[2019-02-04 10:34:01,442 DEBUG easyprocess] process has ended
-[2019-02-04 10:34:01,442 DEBUG easyprocess] return code=0
-[2019-02-04 10:34:01,442 DEBUG easyprocess] stdout=
-[2019-02-04 10:34:01,443 DEBUG easyprocess] stderr=
-[2019-02-04 10:34:01,443 DEBUG Engine.Environment] Remove 'DISPLAY' from environment
-[2019-02-04 10:34:01,445 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:06:18,583 INFO Engine.cloud-utils] Got start command
+[2019-03-04 10:06:18,583 INFO Engine.cloud-utils] Allowed to proceed with start
+[2019-03-04 10:06:18,584 DEBUG Engine] Startup <bztcloud.PeriodicFileUploader object at 0x7fc9c1dea450>
+[2019-03-04 10:06:18,584 DEBUG Engine] Startup <bztcloud.InitialFileUploader object at 0x7fc9c1dea550>
+[2019-03-04 10:06:18,585 DEBUG Engine.initial-uploader] files to upload:
+[2019-03-04 10:06:18,585 DEBUG Engine.initial-uploader] /tmp/artifacts/*.jmx
+[2019-03-04 10:06:18,592 DEBUG Engine.initial-uploader] Starting Periodic File Uploader
+[2019-03-04 10:06:18,592 WARNING root] stdout is not IOBase: <colorama.ansitowin32.StreamWrapper object at 0x7fc9ccd8b650>
+[2019-03-04 10:06:18,592 DEBUG bzt.utils] Executing shell: ['python', '-m', 'bztcloud.helpers.S3', '--periodic', '0', '--aws_params', '/tmp/tmpjCWZSw.yml', u'/tmp/artifacts/*.jmx'] at .
+[2019-03-04 10:06:18,942 DEBUG Engine.initial-uploader] Periodic File Uploader started
+[2019-03-04 10:06:18,942 DEBUG Engine] Startup <bztcloud.VersionSwitcherService object at 0x7fc9c1dea5d0>
+[2019-03-04 10:06:18,943 DEBUG Engine] Startup <bztcloud.helpers.timelimiter.TimeLimiter object at 0x7fc9c1dea750>
+[2019-03-04 10:06:18,943 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7fc9c1dea790>
+[2019-03-04 10:06:18,944 DEBUG Engine] Startup <bztcloud.S3Downloader object at 0x7fc9c1dea890>
+[2019-03-04 10:06:18,944 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7fc9c1dea850>
+[2019-03-04 10:06:18,944 DEBUG Engine] Startup <bztcloud.FinalNotifier object at 0x7fc9c1dea950>
+[2019-03-04 10:06:18,944 DEBUG Engine] Startup <bztcloud.helpers.dynjmx.JMXOverrider object at 0x7fc9c1dea910>
+[2019-03-04 10:06:18,947 DEBUG Engine.dynjmx] Concurrency parameterization in ConcurrencyThreadGroup (Thread Group): 20 -> ${__P(BM_CTG_TargetLevel,20)}
+[2019-03-04 10:06:18,953 DEBUG Engine.dynjmx] Ramp-up parameterization in ConcurrencyThreadGroup (Thread Group): 60 -> ${__P(BM_CTG_RampUp,60)}
+[2019-03-04 10:06:18,954 DEBUG JMX] Saving JMX to: /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+[2019-03-04 10:06:18,954 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7fc9c9f9a990>
+[2019-03-04 10:06:18,955 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7fc9c0343290>
+[2019-03-04 10:06:18,955 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7fc9baef5250>
+[2019-03-04 10:06:18,955 INFO Engine.console] Waiting for results...
+[2019-03-04 10:06:18,956 DEBUG Engine] Startup <bztcustom.ldjsonresults.LDJSONExporter object at 0x7fc9bae99a90>
+[2019-03-04 10:06:18,957 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x7fc9baeb01d0>
+[2019-03-04 10:06:18,958 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7fc9c9fe0350>
+[2019-03-04 10:06:18,960 DEBUG Engine.local] Delay setup for jmeter/default-scenario-6655278: 0(start-at) + 0(delay) = 0
+[2019-03-04 10:06:18,972 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2019-03-04 10:06:19,169 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2019-03-04 10:06:19,172 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-03-04 10:06:19,172 DEBUG root] Leveled up log file verbosity
+[2019-03-04 10:06:19,177 DEBUG bzt.utils] Executing shell: ['/root/.bzt/jmeter-taurus/5.0/bin/jmeter.sh', '-n', '-t', u'/tmp/artifacts/modified_Demo_PE_VOLO.jmx', '-j', '/tmp/artifacts/jmeter.log', '-q', '/tmp/artifacts/jmeter-bzt.properties'] at /tmp/artifacts
+[2019-03-04 10:06:19,909 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-03-04 10:06:32,534 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 9s
+[2019-03-04 10:06:39,516 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 12s
+[2019-03-04 10:06:42,731 INFO Engine.console] Current: 3 vu	1 succ	0 fail	6.241 avg rt	/	Cumulative: 5.275 avg rt, 0% failures
+[2019-03-04 10:06:44,606 INFO Engine.console] Current: 2 vu	2 succ	0 fail	2.333 avg rt	/	Cumulative: 3.804 avg rt, 0% failures
+[2019-03-04 10:06:47,548 INFO Engine.console] Current: 3 vu	2 succ	0 fail	1.855 avg rt	/	Cumulative: 2.638 avg rt, 0% failures
+[2019-03-04 10:06:48,647 INFO Engine.console] Current: 3 vu	2 succ	0 fail	0.831 avg rt	/	Cumulative: 2.276 avg rt, 0% failures
+[2019-03-04 10:06:50,548 INFO Engine.console] Current: 4 vu	3 succ	0 fail	1.417 avg rt	/	Cumulative: 1.997 avg rt, 0% failures
+[2019-03-04 10:06:53,551 INFO Engine.console] Current: 5 vu	3 succ	0 fail	1.411 avg rt	/	Cumulative: 1.838 avg rt, 0% failures
+[2019-03-04 10:06:56,514 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 9s
+[2019-03-04 10:06:56,638 INFO Engine.console] Current: 7 vu	3 succ	0 fail	1.414 avg rt	/	Cumulative: 1.669 avg rt, 0% failures
+[2019-03-04 10:06:59,589 INFO Engine.console] Current: 8 vu	3 succ	0 fail	1.596 avg rt	/	Cumulative: 1.637 avg rt, 0% failures
+[2019-03-04 10:07:02,641 INFO Engine.console] Current: 9 vu	3 succ	0 fail	1.472 avg rt	/	Cumulative: 1.601 avg rt, 0% failures
+[2019-03-04 10:07:05,568 INFO Engine.console] Current: 10 vu	3 succ	0 fail	1.513 avg rt	/	Cumulative: 1.576 avg rt, 0% failures
+[2019-03-04 10:07:07,527 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 7s
+[2019-03-04 10:07:07,591 INFO Engine.console] Current: 11 vu	3 succ	0 fail	1.404 avg rt	/	Cumulative: 1.547 avg rt, 0% failures
+[2019-03-04 10:07:09,757 INFO Engine.console] Current: 12 vu	3 succ	2 fail	0.959 avg rt	/	Cumulative: 1.472 avg rt, 0% failures
+[2019-03-04 10:07:13,633 INFO Engine.console] Current: 16 vu	0 succ	2 fail	0.913 avg rt	/	Cumulative: 1.418 avg rt, 0% failures
+[2019-03-04 10:07:14,536 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 6s
+[2019-03-04 10:07:14,594 INFO Engine.console] Current: 14 vu	3 succ	0 fail	1.454 avg rt	/	Cumulative: 1.394 avg rt, 0% failures
+[2019-03-04 10:07:17,597 INFO Engine.console] Current: 15 vu	3 succ	1 fail	1.385 avg rt	/	Cumulative: 1.370 avg rt, 0% failures
+[2019-03-04 10:07:20,614 INFO Engine.console] Current: 16 vu	3 succ	1 fail	1.320 avg rt	/	Cumulative: 1.346 avg rt, 0% failures
+[2019-03-04 10:07:21,557 INFO Engine.console] Current: 16 vu	2 succ	0 fail	0.615 avg rt	/	Cumulative: 1.326 avg rt, 0% failures
+[2019-03-04 10:07:23,746 INFO Engine.console] Current: 17 vu	5 succ	1 fail	1.140 avg rt	/	Cumulative: 1.343 avg rt, 0% failures
+[2019-03-04 10:07:24,618 INFO Engine.console] Current: 17 vu	4 succ	0 fail	1.297 avg rt	/	Cumulative: 1.341 avg rt, 0% failures
+[2019-03-04 10:07:26,619 INFO Engine.console] Current: 18 vu	7 succ	1 fail	1.267 avg rt	/	Cumulative: 1.311 avg rt, 0% failures
+[2019-03-04 10:07:29,606 INFO Engine.console] Current: 19 vu	7 succ	2 fail	1.154 avg rt	/	Cumulative: 1.291 avg rt, 0% failures
+[2019-03-04 10:07:31,551 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2019-03-04 10:07:31,629 INFO Engine.console] Current: 20 vu	7 succ	1 fail	1.272 avg rt	/	Cumulative: 1.276 avg rt, 0% failures
+[2019-03-04 10:07:34,617 INFO Engine.console] Current: 20 vu	5 succ	0 fail	1.132 avg rt	/	Cumulative: 1.258 avg rt, 0% failures
+[2019-03-04 10:07:35,573 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.950 avg rt	/	Cumulative: 1.255 avg rt, 0% failures
+[2019-03-04 10:07:36,609 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.600 avg rt	/	Cumulative: 1.246 avg rt, 0% failures
+[2019-03-04 10:07:37,576 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.686 avg rt	/	Cumulative: 1.237 avg rt, 0% failures
+[2019-03-04 10:07:38,629 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.583 avg rt	/	Cumulative: 1.233 avg rt, 0% failures
+[2019-03-04 10:07:41,604 INFO Engine.console] Current: 20 vu	3 succ	0 fail	1.378 avg rt	/	Cumulative: 1.233 avg rt, 0% failures
+[2019-03-04 10:07:42,613 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.768 avg rt	/	Cumulative: 1.218 avg rt, 0% failures
+[2019-03-04 10:07:43,623 INFO Engine.console] Current: 20 vu	3 succ	1 fail	1.309 avg rt	/	Cumulative: 1.220 avg rt, 0% failures
+[2019-03-04 10:07:45,580 INFO Engine.console] Current: 20 vu	1 succ	0 fail	0.909 avg rt	/	Cumulative: 1.218 avg rt, 0% failures
+[2019-03-04 10:07:46,626 INFO Engine.console] Current: 20 vu	4 succ	1 fail	1.086 avg rt	/	Cumulative: 1.214 avg rt, 0% failures
+[2019-03-04 10:07:47,586 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.924 avg rt	/	Cumulative: 1.213 avg rt, 0% failures
+[2019-03-04 10:07:48,599 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.694 avg rt	/	Cumulative: 1.206 avg rt, 0% failures
+[2019-03-04 10:07:49,628 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.236 avg rt	/	Cumulative: 1.207 avg rt, 0% failures
+[2019-03-04 10:07:50,591 INFO Engine.console] Current: 20 vu	0 succ	2 fail	0.620 avg rt	/	Cumulative: 1.200 avg rt, 0% failures
+[2019-03-04 10:07:51,608 INFO Engine.console] Current: 20 vu	1 succ	2 fail	0.508 avg rt	/	Cumulative: 1.188 avg rt, 0% failures
+[2019-03-04 10:07:52,595 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.580 avg rt	/	Cumulative: 1.177 avg rt, 0% failures
+[2019-03-04 10:07:53,628 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.473 avg rt	/	Cumulative: 1.182 avg rt, 0% failures
+[2019-03-04 10:07:54,633 INFO Engine.console] Current: 20 vu	1 succ	2 fail	0.505 avg rt	/	Cumulative: 1.171 avg rt, 0% failures
+[2019-03-04 10:07:55,595 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.622 avg rt	/	Cumulative: 1.165 avg rt, 0% failures
+[2019-03-04 10:07:56,637 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.563 avg rt	/	Cumulative: 1.172 avg rt, 0% failures
+[2019-03-04 10:07:57,604 INFO Engine.console] Current: 20 vu	1 succ	3 fail	0.618 avg rt	/	Cumulative: 1.160 avg rt, 0% failures
+[2019-03-04 10:07:58,617 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.754 avg rt	/	Cumulative: 1.154 avg rt, 0% failures
+[2019-03-04 10:07:59,645 INFO Engine.console] Current: 20 vu	0 succ	2 fail	0.303 avg rt	/	Cumulative: 1.150 avg rt, 0% failures
+[2019-03-04 10:08:01,592 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.817 avg rt	/	Cumulative: 1.146 avg rt, 0% failures
+[2019-03-04 10:08:02,648 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.254 avg rt	/	Cumulative: 1.149 avg rt, 0% failures
+[2019-03-04 10:08:03,654 INFO Engine.console] Current: 20 vu	4 succ	3 fail	1.030 avg rt	/	Cumulative: 1.145 avg rt, 0% failures
+[2019-03-04 10:08:04,626 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.234 avg rt	/	Cumulative: 1.146 avg rt, 0% failures
+[2019-03-04 10:08:05,669 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.769 avg rt	/	Cumulative: 1.148 avg rt, 0% failures
+[2019-03-04 10:08:07,636 INFO Engine.console] Current: 20 vu	7 succ	1 fail	0.950 avg rt	/	Cumulative: 1.141 avg rt, 0% failures
+[2019-03-04 10:08:08,655 INFO Engine.console] Current: 20 vu	3 succ	0 fail	1.394 avg rt	/	Cumulative: 1.145 avg rt, 0% failures
+[2019-03-04 10:08:09,649 INFO Engine.console] Current: 20 vu	2 succ	2 fail	0.916 avg rt	/	Cumulative: 1.141 avg rt, 0% failures
+[2019-03-04 10:08:10,610 INFO Engine.console] Current: 20 vu	3 succ	1 fail	0.551 avg rt	/	Cumulative: 1.131 avg rt, 0% failures
+[2019-03-04 10:08:11,655 INFO Engine.console] Current: 20 vu	5 succ	1 fail	1.444 avg rt	/	Cumulative: 1.139 avg rt, 0% failures
+[2019-03-04 10:08:12,612 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.907 avg rt	/	Cumulative: 1.137 avg rt, 0% failures
+[2019-03-04 10:08:13,652 INFO Engine.console] Current: 20 vu	6 succ	1 fail	0.917 avg rt	/	Cumulative: 1.131 avg rt, 0% failures
+[2019-03-04 10:08:14,639 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.496 avg rt	/	Cumulative: 1.135 avg rt, 0% failures
+[2019-03-04 10:08:16,629 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.668 avg rt	/	Cumulative: 1.127 avg rt, 0% failures
+[2019-03-04 10:08:17,659 INFO Engine.console] Current: 20 vu	3 succ	1 fail	1.285 avg rt	/	Cumulative: 1.129 avg rt, 0% failures
+[2019-03-04 10:08:18,621 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.623 avg rt	/	Cumulative: 1.126 avg rt, 0% failures
+[2019-03-04 10:08:19,629 INFO Engine.console] Current: 20 vu	1 succ	0 fail	0.621 avg rt	/	Cumulative: 1.124 avg rt, 0% failures
+[2019-03-04 10:08:21,662 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.598 avg rt	/	Cumulative: 1.123 avg rt, 0% failures
+[2019-03-04 10:08:22,619 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.973 avg rt	/	Cumulative: 1.122 avg rt, 0% failures
+[2019-03-04 10:08:24,657 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.292 avg rt	/	Cumulative: 1.121 avg rt, 0% failures
+[2019-03-04 10:08:25,631 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.806 avg rt	/	Cumulative: 1.118 avg rt, 0% failures
+[2019-03-04 10:08:26,673 INFO Engine.console] Current: 20 vu	3 succ	0 fail	1.437 avg rt	/	Cumulative: 1.121 avg rt, 0% failures
+[2019-03-04 10:08:27,627 INFO Engine.console] Current: 20 vu	1 succ	0 fail	0.893 avg rt	/	Cumulative: 1.120 avg rt, 0% failures
+[2019-03-04 10:08:28,638 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.464 avg rt	/	Cumulative: 1.116 avg rt, 0% failures
+[2019-03-04 10:08:29,687 INFO Engine.console] Current: 20 vu	1 succ	0 fail	0.959 avg rt	/	Cumulative: 1.118 avg rt, 0% failures
+[2019-03-04 10:08:32,665 INFO Engine.console] Current: 20 vu	3 succ	1 fail	1.181 avg rt	/	Cumulative: 1.114 avg rt, 0% failures
+[2019-03-04 10:08:33,641 INFO Engine.console] Current: 20 vu	1 succ	3 fail	0.626 avg rt	/	Cumulative: 1.108 avg rt, 0% failures
+[2019-03-04 10:08:34,648 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.448 avg rt	/	Cumulative: 1.104 avg rt, 0% failures
+[2019-03-04 10:08:35,694 INFO Engine.console] Current: 20 vu	1 succ	2 fail	0.690 avg rt	/	Cumulative: 1.102 avg rt, 0% failures
+[2019-03-04 10:08:37,643 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.553 avg rt	/	Cumulative: 1.097 avg rt, 0% failures
+[2019-03-04 10:08:38,716 INFO Engine.console] Current: 20 vu	0 succ	3 fail	0.512 avg rt	/	Cumulative: 1.101 avg rt, 0% failures
+[2019-03-04 10:08:40,639 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.920 avg rt	/	Cumulative: 1.100 avg rt, 0% failures
+[2019-03-04 10:08:41,694 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.252 avg rt	/	Cumulative: 1.102 avg rt, 0% failures
+[2019-03-04 10:08:42,665 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.605 avg rt	/	Cumulative: 1.095 avg rt, 0% failures
+[2019-03-04 10:08:45,804 INFO Engine.console] Current: 20 vu	5 succ	3 fail	0.980 avg rt	/	Cumulative: 1.095 avg rt, 0% failures
+[2019-03-04 10:08:48,709 INFO Engine.console] Current: 20 vu	3 succ	0 fail	0.868 avg rt	/	Cumulative: 1.098 avg rt, 0% failures
+[2019-03-04 10:08:49,670 INFO Engine.console] Current: 20 vu	3 succ	2 fail	0.709 avg rt	/	Cumulative: 1.092 avg rt, 0% failures
+[2019-03-04 10:08:51,699 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.891 avg rt	/	Cumulative: 1.094 avg rt, 0% failures
+[2019-03-04 10:08:52,653 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.711 avg rt	/	Cumulative: 1.091 avg rt, 0% failures
+[2019-03-04 10:08:53,710 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.903 avg rt	/	Cumulative: 1.093 avg rt, 0% failures
+[2019-03-04 10:08:55,648 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.488 avg rt	/	Cumulative: 1.090 avg rt, 0% failures
+[2019-03-04 10:08:56,729 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.926 avg rt	/	Cumulative: 1.093 avg rt, 0% failures
+[2019-03-04 10:08:58,656 INFO Engine.console] Current: 20 vu	2 succ	1 fail	0.598 avg rt	/	Cumulative: 1.089 avg rt, 0% failures
+[2019-03-04 10:08:59,698 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.306 avg rt	/	Cumulative: 1.091 avg rt, 0% failures
+[2019-03-04 10:09:00,660 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.913 avg rt	/	Cumulative: 1.091 avg rt, 0% failures
+[2019-03-04 10:09:01,682 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.585 avg rt	/	Cumulative: 1.089 avg rt, 0% failures
+[2019-03-04 10:09:02,706 INFO Engine.console] Current: 20 vu	4 succ	0 fail	1.212 avg rt	/	Cumulative: 1.090 avg rt, 0% failures
+[2019-03-04 10:09:03,663 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.962 avg rt	/	Cumulative: 1.089 avg rt, 0% failures
+[2019-03-04 10:09:04,689 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.608 avg rt	/	Cumulative: 1.087 avg rt, 0% failures
+[2019-03-04 10:09:06,708 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.467 avg rt	/	Cumulative: 1.088 avg rt, 0% failures
+[2019-03-04 10:09:07,667 INFO Engine.console] Current: 20 vu	1 succ	0 fail	0.946 avg rt	/	Cumulative: 1.088 avg rt, 0% failures
+[2019-03-04 10:09:08,732 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.792 avg rt	/	Cumulative: 1.087 avg rt, 0% failures
+[2019-03-04 10:09:10,664 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.633 avg rt	/	Cumulative: 1.085 avg rt, 0% failures
+[2019-03-04 10:09:11,743 INFO Engine.console] Current: 20 vu	0 succ	1 fail	0.923 avg rt	/	Cumulative: 1.086 avg rt, 0% failures
+[2019-03-04 10:09:13,667 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.618 avg rt	/	Cumulative: 1.084 avg rt, 0% failures
+[2019-03-04 10:09:14,747 INFO Engine.console] Current: 20 vu	0 succ	2 fail	0.615 avg rt	/	Cumulative: 1.082 avg rt, 0% failures
+[2019-03-04 10:09:16,675 INFO Engine.console] Current: 20 vu	2 succ	2 fail	0.539 avg rt	/	Cumulative: 1.077 avg rt, 0% failures
+[2019-03-04 10:09:17,737 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.938 avg rt	/	Cumulative: 1.079 avg rt, 0% failures
+[2019-03-04 10:09:19,667 INFO Engine.console] Current: 20 vu	0 succ	2 fail	0.293 avg rt	/	Cumulative: 1.075 avg rt, 0% failures
+[2019-03-04 10:09:20,699 INFO Engine.console] Current: 20 vu	2 succ	0 fail	0.659 avg rt	/	Cumulative: 1.073 avg rt, 0% failures
+[2019-03-04 10:09:21,724 INFO Engine.console] Current: 20 vu	2 succ	1 fail	1.429 avg rt	/	Cumulative: 1.076 avg rt, 0% failures
+[2019-03-04 10:09:22,691 INFO Engine.console] Current: 20 vu	1 succ	3 fail	0.627 avg rt	/	Cumulative: 1.072 avg rt, 0% failures
+[2019-03-04 10:09:23,702 INFO Engine.console] Current: 20 vu	1 succ	1 fail	0.764 avg rt	/	Cumulative: 1.071 avg rt, 0% failures
+[2019-03-04 10:09:24,738 INFO Engine.console] Current: 20 vu	3 succ	2 fail	1.222 avg rt	/	Cumulative: 1.072 avg rt, 0% failures
+[2019-03-04 10:09:25,689 INFO Engine.console] Current: 20 vu	1 succ	2 fail	0.499 avg rt	/	Cumulative: 1.069 avg rt, 0% failures
+[2019-03-04 10:09:27,948 INFO Engine.console] Current: 20 vu	2 succ	2 fail	0.684 avg rt	/	Cumulative: 1.068 avg rt, 0% failures
+[2019-03-04 10:09:30,781 INFO Engine.cloud-utils] Got stop command
+[2019-03-04 10:09:31,782 INFO Engine.periodic-uploader] Terminating process PID 146 with signal 15 (59 tries left)
+[2019-03-04 10:09:32,784 INFO Engine.periodic-uploader] Terminating process PID 146 with signal 15 (58 tries left)
+[2019-03-04 10:09:32,787 WARNING Engine] Please wait for graceful shutdown...
+[2019-03-04 10:09:32,787 DEBUG root] Leveled up log file verbosity
+[2019-03-04 10:09:32,787 INFO Engine] Shutting down...
+[2019-03-04 10:09:32,788 DEBUG Engine] Current stop reason: 
+[2019-03-04 10:09:32,788 DEBUG Engine.local] Shutdown jmeter/default-scenario-6655278
+[2019-03-04 10:09:33,790 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2019-03-04 10:09:34,791 DEBUG Engine.jmeter] JMeter stopped on Shutdown command
+[2019-03-04 10:09:34,792 DEBUG pyvirtualdisplay.abstractdisplay] unset DISPLAY
+[2019-03-04 10:09:34,792 DEBUG easyprocess] stopping process (pid=405 cmd="['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '1024x768x24', ':1001']")
+[2019-03-04 10:09:34,792 DEBUG easyprocess] process is active -> sending SIGTERM
+[2019-03-04 10:09:34,908 DEBUG easyprocess] process has ended
+[2019-03-04 10:09:34,909 DEBUG easyprocess] return code=0
+[2019-03-04 10:09:34,909 DEBUG easyprocess] stdout=
+[2019-03-04 10:09:34,909 DEBUG easyprocess] stderr=
+[2019-03-04 10:09:34,909 DEBUG Engine.Environment] Remove 'DISPLAY' from environment
+[2019-03-04 10:09:34,911 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "shutting down", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 
-[2019-02-04 10:34:01,449 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:34:01,530 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 100
-[2019-02-04 10:34:01,531 DEBUG Engine.cloud-utils] Response [200]: {
+[2019-03-04 10:09:34,912 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:09:34,979 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 100
+[2019-03-04 10:09:34,980 DEBUG Engine.cloud-utils] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "shutting down"
     }
 }
-[2019-02-04 10:34:02,532 INFO Engine.periodic-uploader] Terminating process PID 109 with signal 15 (59 tries left)
-[2019-02-04 10:34:03,533 INFO Engine.periodic-uploader] Terminating process PID 109 with signal 15 (58 tries left)
-[2019-02-04 10:34:03,537 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
-[2019-02-04 10:34:03,588 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
-[2019-02-04 10:34:03,589 INFO Engine] Post-processing...
-[2019-02-04 10:34:03,589 DEBUG Engine.local] Post-process None/My Scenario
-[2019-02-04 10:34:03,589 DEBUG Engine] Add existing artifact (move=True): /tmp/artifacts/modified_requests.jmx
-[2019-02-04 10:34:03,589 DEBUG Engine] No need to copy /tmp/artifacts/modified_requests.jmx
-[2019-02-04 10:34:03,589 DEBUG Engine.jmeter.FuncJTLReader.FileReader] Reading: /tmp/artifacts/trace.jtl
-[2019-02-04 10:34:03,590 INFO Engine.final-stats] Test duration: 0:00:05
-[2019-02-04 10:34:03,590 INFO Engine.final-stats] Total: 1 test
-[2019-02-04 10:34:03,590 DEBUG Engine.console] No logger_handler or orig_stream was detected
-[2019-02-04 10:34:03,590 DEBUG Engine.ldjson-results] Opening file for writing: exported.jetlag.ldjson
-[2019-02-04 10:34:03,590 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 0
-[2019-02-04 10:34:03,590 INFO Engine.blazemeter] Sending remaining KPI data to server...
-[2019-02-04 10:34:03,591 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-v4-5c58150835b8d/files?signature=ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg= --===============5465228813045779637==
-Content-Disposition: file; name="file"; filename="r-v4-5c58150835b8d-0-c.monitoring.json"
+[2019-03-04 10:09:34,983 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2019-03-04 10:09:35,026 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2019-03-04 10:09:35,028 WARNING root] Interrupted by user
+[2019-03-04 10:09:35,028 DEBUG root] ManualShutdown: 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bzt/cli.py", line 258, in perform
+    self.engine.run()
+  File "/usr/local/lib/python2.7/dist-packages/bzt/engine.py", line 261, in run
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python2.7/dist-packages/bzt/engine.py", line 240, in run
+    self._wait()
+  File "/usr/local/lib/python2.7/dist-packages/bzt/engine.py", line 282, in _wait
+    while not self._check_modules_list():
+  File "/usr/local/lib/python2.7/dist-packages/bzt/engine.py", line 269, in _check_modules_list
+    finished = bool(module.check())
+  File "/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.py", line 154, in check
+    self.handle_commands()
+  File "/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.py", line 167, in handle_commands
+    self._manual_shutdown()
+  File "/usr/local/taurus-cloud/python/lib/python2.7/site-packages/bztcloud/__init__.py", line 99, in _manual_shutdown
+    raise ManualShutdown()
+ManualShutdown
+[2019-03-04 10:09:35,029 INFO Engine] Post-processing...
+[2019-03-04 10:09:35,029 DEBUG Engine.local] Post-process jmeter/default-scenario-6655278
+[2019-03-04 10:09:35,029 DEBUG Engine] Add existing artifact (move=True): /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+[2019-03-04 10:09:35,029 DEBUG Engine] No need to copy /tmp/artifacts/modified_Demo_PE_VOLO.jmx
+[2019-03-04 10:09:35,029 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /tmp/artifacts/error.jtl
+[2019-03-04 10:09:35,031 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /tmp/artifacts/error.jtl
+[2019-03-04 10:09:35,031 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /tmp/artifacts/kpi.jtl
+[2019-03-04 10:09:35,032 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read: 16 lines / 5302 bytes (at speed 1048576)
+[2019-03-04 10:09:35,032 DEBUG Engine.jmeter.JTLReader] Putting sample 1551694132 into 1551694165
+[2019-03-04 10:09:35,033 DEBUG Engine.jmeter.JTLReader] Buffer len: 8; Known errors count: 3
+[2019-03-04 10:09:35,063 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694165
+[2019-03-04 10:09:35,065 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694166
+[2019-03-04 10:09:35,067 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694167
+[2019-03-04 10:09:35,070 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694169
+[2019-03-04 10:09:35,072 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694170
+[2019-03-04 10:09:35,075 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694171
+[2019-03-04 10:09:35,076 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694172
+[2019-03-04 10:09:35,079 DEBUG Engine.jmeter.JTLReader] Aggregating: 1551694173
+[2019-03-04 10:09:35,082 DEBUG Engine.consolidator] Consolidator buffer[10]: [1551694163, 1551694164, 1551694165, 1551694166, 1551694167, 1551694169, 1551694170, 1551694171, 1551694172, 1551694173]
+[2019-03-04 10:09:35,082 DEBUG Engine.consolidator] Merging into 1551694163
+[2019-03-04 10:09:35,082 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,111 DEBUG Engine.consolidator] Processed datapoint: 1551694163/140504418232272
+[2019-03-04 10:09:35,111 DEBUG Engine.consolidator] Merging into 1551694164
+[2019-03-04 10:09:35,111 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,152 DEBUG Engine.consolidator] Processed datapoint: 1551694164/140504418232272
+[2019-03-04 10:09:35,152 DEBUG Engine.consolidator] Merging into 1551694165
+[2019-03-04 10:09:35,152 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,164 DEBUG Engine.consolidator] Processed datapoint: 1551694165/140504418232272
+[2019-03-04 10:09:35,164 DEBUG Engine.consolidator] Merging into 1551694166
+[2019-03-04 10:09:35,165 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,180 DEBUG Engine.consolidator] Processed datapoint: 1551694166/140504418232272
+[2019-03-04 10:09:35,180 DEBUG Engine.consolidator] Merging into 1551694167
+[2019-03-04 10:09:35,180 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,224 DEBUG Engine.consolidator] Processed datapoint: 1551694167/140504418232272
+[2019-03-04 10:09:35,224 DEBUG Engine.consolidator] Merging into 1551694169
+[2019-03-04 10:09:35,224 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,238 DEBUG Engine.consolidator] Processed datapoint: 1551694169/140504418232272
+[2019-03-04 10:09:35,239 DEBUG Engine.consolidator] Merging into 1551694170
+[2019-03-04 10:09:35,239 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,258 DEBUG Engine.consolidator] Processed datapoint: 1551694170/140504418232272
+[2019-03-04 10:09:35,259 DEBUG Engine.consolidator] Merging into 1551694171
+[2019-03-04 10:09:35,259 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,271 DEBUG Engine.consolidator] Processed datapoint: 1551694171/140504418232272
+[2019-03-04 10:09:35,271 DEBUG Engine.consolidator] Merging into 1551694172
+[2019-03-04 10:09:35,271 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,286 DEBUG Engine.consolidator] Processed datapoint: 1551694172/140504418232272
+[2019-03-04 10:09:35,286 DEBUG Engine.consolidator] Merging into 1551694173
+[2019-03-04 10:09:35,286 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-03-04 10:09:35,295 DEBUG Engine.consolidator] Processed datapoint: 1551694173/140504418232272
+[2019-03-04 10:09:35,295 INFO Engine.final-stats] Test duration: 0:03:16
+[2019-03-04 10:09:35,295 INFO Engine.final-stats] Samples count: 548, 25.36% failures
+[2019-03-04 10:09:35,296 INFO Engine.final-stats] Average times: total 1.057, latency 0.374, connect 0.251
+[2019-03-04 10:09:35,335 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |         0.062 |
+|          50.0 |         0.898 |
+|          90.0 |          2.59 |
+|          95.0 |         2.646 |
+|          99.0 |         2.886 |
+|          99.9 |          6.24 |
+|         100.0 |          6.24 |
++---------------+---------------+
+[2019-03-04 10:09:35,355 INFO Engine.final-stats] Request label stats:
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------+--------+---------------------------------------------------------------------+
+| label                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | status |    succ | avg_rt | error                                                               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------+--------+---------------------------------------------------------------------+
+| LoginPage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |  FAIL  |   0.00% |  0.919 | Number of samples in transaction : 2, number of failing samples : 1 |
+| Test                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |   OK   | 100.00% |  2.687 |                                                                     |
+| https://app.cheetah.volo2.com/4304                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |   OK   | 100.00% |  1.041 |                                                                     |
+| https://app.cheetah.volo2.com/4304#state=d32971d7-2e0e-44d3-8f40-c2827f73d773&session_state=4d077cda-e64c-484c-88a4-deff0c11f833&code=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..JIxfIdnW3JwSGlOTtA0tGQ.eXx69a_qSAy2YbW7E3NVVOAQ-xXy1_iqAcbMBmOTo7E9ThWgyHN0_4BTMJ6ui5zCbd2qQsBiP4aJckI9TZxtx1vKpLHuQOwo_2eUWDtVryFkxHMhl6s_mC7gwWdPvTvrk1Kkj3M4bnGhyF-xffOCINtiREuL6DAoJiCImW7BLQfj_Rm49lysCe6ur_Y-X6oT_cnOin3wm0-tZCLJxswFkPAOrvC62vQA1BYg0uA-LkM-rrvx7YsyjJYaith1Re1e.LbIv6FHs3sh0g5mBZHPRhQ |   OK   | 100.00% |  0.595 |                                                                     |
+| https://auth.cheetah.volo2.com/auth/realms/4304/login-actions/authenticate?session_code=vaszMdsq-XL1QDVfA_SVJWIr85rvn3JFn2eUuPiiVHo&execution=5c2aa1a7-f10d-47cc-bbc2-0192fb3f936c&client_id=web&tab_id=v3y5UZ0R628                                                                                                                                                                                                                                                                                   |  FAIL  |   0.00% |  0.315 | Bad Request                                                         |
+| https://auth.cheetah.volo2.com/auth/realms/4304/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fapp.cheetah.volo2.com%2F4304&state=73d8f9a6-dac8-445e-ae50-7b0fe23cf6ae&response_mode=fragment&response_type=code&scope=openid&nonce=97d57b04-26b1-4ce3-80f7-9ca1ce5e5d55&prompt=none                                                                                                                                                                                           |   OK   | 100.00% |  0.916 |                                                                     |
+| https://auth.cheetah.volo2.com/auth/realms/4304/protocol/openid-connect/auth?client_id=web&redirect_uri=https%3A%2F%2Fapp.cheetah.volo2.com%2F4304&state=d32971d7-2e0e-44d3-8f40-c2827f73d773&response_mode=fragment&response_type=code&scope=openid&nonce=192d71d9-3566-48ea-a23b-a3933a16b54a                                                                                                                                                                                                       |  FAIL  |  98.00% |  0.712 | Non HTTP response message: Socket closed                            |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+---------+--------+---------------------------------------------------------------------+
+[2019-03-04 10:09:35,356 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-03-04 10:09:35,356 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 0
+[2019-03-04 10:09:35,356 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2019-03-04 10:09:35,417 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-v4-5c7cf844582cb/files?signature=ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ= --===============0217029234605913154==
+Content-Disposition: file; name="file"; filename="r-v4-5c7cf844582cb-0-c.monitoring.json"
 Content-Type: application/json
 
 {
@@ -560,49 +767,57 @@ Content-Type: application/json
   "Connections": "Connections", 
   "CPU": "CPU", 
   "Network I/O": "Network I/
-[2019-02-04 10:34:03,592 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-v4-5c58150835b8d/files?signature=ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg=
-[2019-02-04 10:34:03,816 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-v4-5c58150835b8d/files?signature=ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg= HTTP/1.1" 200 115
-[2019-02-04 10:34:03,817 DEBUG User] Response [200]: {
+[2019-03-04 10:09:35,418 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-v4-5c7cf844582cb/files?signature=ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ=
+[2019-03-04 10:09:35,775 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-v4-5c7cf844582cb/files?signature=ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ= HTTP/1.1" 200 115
+[2019-03-04 10:09:35,776 DEBUG User] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": [
-        "r-v4-5c58150835b8d-0-c.monitoring.json"
+        "r-v4-5c7cf844582cb-0-c.monitoring.json"
     ]
 }
-[2019-02-04 10:34:03,817 DEBUG Engine.blazemeter] Set last check time to: 1549276435.67
-[2019-02-04 10:34:03,819 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:09:35,777 DEBUG Engine.blazemeter] Set last check time to: 1551693977.45
+[2019-03-04 10:09:35,778 DEBUG Engine.cloud-utils] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "post-processing", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg=
-[2019-02-04 10:34:03,823 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:34:03,899 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 102
-[2019-02-04 10:34:03,900 DEBUG Engine.cloud-utils] Response [200]: {
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ=
+[2019-03-04 10:09:35,779 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:09:35,834 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 102
+[2019-03-04 10:09:35,835 DEBUG Engine.cloud-utils] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "post-processing"
     }
 }
-[2019-02-04 10:34:03,900 DEBUG Engine.shellexec.Task] Task: atop -a -w atop.binlog 15 is not finished yet
-[2019-02-04 10:34:03,901 INFO Engine.shellexec.Task] Background task was not completed, shutting it down: atop -a -w atop.binlog 15
-[2019-02-04 10:34:04,901 INFO Engine.shellexec.Task] Terminating process PID 124 with signal 15 (59 tries left)
-[2019-02-04 10:34:05,903 INFO Engine.shellexec.Task] Terminating process PID 124 with signal 15 (58 tries left)
-[2019-02-04 10:34:05,909 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/process-cleanup.sh
-[2019-02-04 10:34:11,204 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/process-cleanup.sh
-[2019-02-04 10:34:11,205 DEBUG Engine.final-notifier] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c58150835b8d/notify {
+[2019-03-04 10:09:35,835 DEBUG Engine.shellexec.Task] Task: atop -a -w atop.binlog 15 is not finished yet
+[2019-03-04 10:09:35,835 INFO Engine.shellexec.Task] Background task was not completed, shutting it down: atop -a -w atop.binlog 15
+[2019-03-04 10:09:36,836 INFO Engine.shellexec.Task] Terminating process PID 152 with signal 15 (59 tries left)
+[2019-03-04 10:09:37,838 INFO Engine.shellexec.Task] Terminating process PID 152 with signal 15 (58 tries left)
+[2019-03-04 10:09:37,839 DEBUG Engine.shellexec.Task] Task: /usr/local/bztcloud/jetlag-run.sh is not finished yet
+[2019-03-04 10:09:37,839 INFO Engine.shellexec.Task] Background task was not completed, shutting it down: /usr/local/bztcloud/jetlag-run.sh
+[2019-03-04 10:09:38,840 INFO Engine.shellexec.Task] Terminating process PID 178 with signal 15 (59 tries left)
+[2019-03-04 10:09:39,842 INFO Engine.shellexec.Task] Terminating process PID 178 with signal 15 (58 tries left)
+[2019-03-04 10:09:39,842 DEBUG Engine.shellexec.Task] Task: /usr/local/bztcloud/jetpack-run.sh is not finished yet
+[2019-03-04 10:09:39,842 INFO Engine.shellexec.Task] Background task was not completed, shutting it down: /usr/local/bztcloud/jetpack-run.sh
+[2019-03-04 10:09:40,844 INFO Engine.shellexec.Task] Terminating process PID 193 with signal 15 (59 tries left)
+[2019-03-04 10:09:41,845 INFO Engine.shellexec.Task] Terminating process PID 193 with signal 15 (58 tries left)
+[2019-03-04 10:09:41,846 INFO Engine.shellexec.Task] Starting shell command: /usr/local/bztcloud/process-cleanup.sh
+[2019-03-04 10:09:47,225 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: /usr/local/bztcloud/process-cleanup.sh
+[2019-03-04 10:09:47,225 DEBUG Engine.final-notifier] Request: POST https://a.blazemeter.com/api/v4/taurus/r-v4-5c7cf844582cb/notify {
  "status": "bzt-done", 
- "token": "ci12NC01YzU4MTUwODM1YjhkOjE1NTA0ODYwMjc6NmRhOTY5NGFmN2E4MWFlYmY3N2E5MzM3YmEzOGNhZGY5MzdlODJiZDA0ZTBhYTI3NjhiMDcwZGViZDY2NzJkZmQzNGIyYzdiMzMxOGJiZWI4NDNiOTMyMDkxN2I1YmYzN2JkNzM1Y2Y0NDRjZDI1NTRlNDg0MGRmNjJhYzJmNTg="
+ "token": "ci12NC01YzdjZjg0NDU4MmNiOjE1NTI5MDM1NDg6M2E1MmEwNzY2OTM2M2QwZTUzZmQ1ZjRiZmUwOGM3OWZiMjY4ZDViZTM4NzcxMTY1YTgyOTJiMjM1M2MxOWNjMGE3MTUwMmFlOGEyNmMxNzIzNDljYzdjNTY0NjA5ZmQwYzNlNGYwMjAwNTMzNmJiNWNmMGNlMjQ3YjQ1NDMwMWQ="
 }
-[2019-02-04 10:34:11,210 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
-[2019-02-04 10:34:11,298 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c58150835b8d/notify HTTP/1.1" 200 95
-[2019-02-04 10:34:11,299 DEBUG Engine.final-notifier] Response [200]: {
+[2019-03-04 10:09:47,226 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-03-04 10:09:47,286 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/taurus/r-v4-5c7cf844582cb/notify HTTP/1.1" 200 95
+[2019-03-04 10:09:47,287 DEBUG Engine.final-notifier] Response [200]: {
     "api_version": 4,
     "error": null,
     "result": {
         "status": "bzt-done"
     }
 }
-[2019-02-04 10:34:11,302 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
-[2019-02-04 10:34:11,349 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
-[2019-02-04 10:34:11,350 INFO root] Artifacts dir: /tmp/artifacts
-[2019-02-04 10:34:11,350 INFO root] Done performing with code: 0
-[2019-02-04 10:34:11,350 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log
+[2019-03-04 10:09:47,291 DEBUG Engine.Configuration] Dumping YAML config into /tmp/artifacts/effective.yml
+[2019-03-04 10:09:47,333 DEBUG Engine.Configuration] Dumping JSON config into /tmp/artifacts/effective.json
+[2019-03-04 10:09:47,335 INFO root] Artifacts dir: /tmp/artifacts
+[2019-03-04 10:09:47,335 WARNING root] Done performing with code: 2
+[2019-03-04 10:09:47,335 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log
